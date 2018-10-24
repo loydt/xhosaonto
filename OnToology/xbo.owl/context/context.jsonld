@@ -1,0 +1,777 @@
+{
+  "@context" : {
+    "Lower" : {
+      "@id" : "http://www.semanticweb.org/XBO#Lower"
+    },
+    "Pondo" : {
+      "@id" : "http://www.semanticweb.org/XBO#Pondo"
+    },
+    "Fringe" : {
+      "@id" : "http://www.semanticweb.org/XBO#Fringe"
+    },
+    "DoubleRightInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightInflexibleBracelet"
+    },
+    "Common" : {
+      "@id" : "http://www.semanticweb.org/XBO#Common"
+    },
+    "Age" : {
+      "@id" : "http://www.semanticweb.org/XBO#Age"
+    },
+    "MultiStreamHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiStreamHeadband"
+    },
+    "Double" : {
+      "@id" : "http://www.semanticweb.org/XBO#Double"
+    },
+    "DoubleTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleTabNecklace"
+    },
+    "MultiRightInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightInflexibleArmlet"
+    },
+    "RightInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightInflexibleArmlet"
+    },
+    "MultiLeftInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftInflexibleBracelet"
+    },
+    "Woman" : {
+      "@id" : "http://www.semanticweb.org/XBO#Woman"
+    },
+    "Bracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#Bracelet"
+    },
+    "LeftInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftInflexibleArmlet"
+    },
+    "Side" : {
+      "@id" : "http://www.semanticweb.org/XBO#Side"
+    },
+    "LeftSide" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftSide"
+    },
+    "StrandHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#StrandHeadband"
+    },
+    "SingleStrandHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleStrandHeadband"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "InflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#InflexibleAnklet"
+    },
+    "hasQuantity" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasQuantity",
+      "@type" : "@id"
+    },
+    "placementRegion" : {
+      "@id" : "http://www.semanticweb.org/XBO#placementRegion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Use" : {
+      "@id" : "http://www.semanticweb.org/XBO#Use"
+    },
+    "hasSpouse" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasSpouse",
+      "@type" : "@id"
+    },
+    "RightInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightInflexibleBracelet"
+    },
+    "MiddleAdulthood" : {
+      "@id" : "http://www.semanticweb.org/XBO#MiddleAdulthood"
+    },
+    "FlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#FlexibleArmlet"
+    },
+    "DoubleLeftInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftInflexibleArmlet"
+    },
+    "SmallDoubleStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallDoubleStrandNecklace"
+    },
+    "personType" : {
+      "@id" : "http://www.semanticweb.org/XBO#personType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "enthicTribe" : {
+      "@id" : "http://www.semanticweb.org/XBO#enthicTribe",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Material" : {
+      "@id" : "http://www.semanticweb.org/XBO#Material"
+    },
+    "hasTribe" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasTribe",
+      "@type" : "@id"
+    },
+    "hasDecoration" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasDecoration",
+      "@type" : "@id"
+    },
+    "SmallFlexibleCollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallFlexibleCollarNecklace"
+    },
+    "Armlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#Armlet"
+    },
+    "SingleRightInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightInflexibleAnklet"
+    },
+    "SingleLeftInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftInflexibleArmlet"
+    },
+    "itemQuantity" : {
+      "@id" : "http://www.semanticweb.org/XBO#itemQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasAgeGroup" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasAgeGroup",
+      "@type" : "@id"
+    },
+    "Shin" : {
+      "@id" : "http://www.semanticweb.org/XBO#Shin"
+    },
+    "SingleTabHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleTabHeadband"
+    },
+    "TasselNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#TasselNecklace"
+    },
+    "PersonEntity" : {
+      "@id" : "http://www.semanticweb.org/XBO#PersonEntity"
+    },
+    "Single" : {
+      "@id" : "http://www.semanticweb.org/XBO#Single"
+    },
+    "DoubleLeftFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleArmlet"
+    },
+    "itemSize" : {
+      "@id" : "http://www.semanticweb.org/XBO#itemSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasParent" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasParent",
+      "@type" : "@id"
+    },
+    "MultiStrandWaistband" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiStrandWaistband"
+    },
+    "DoubleStrandWaistband" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleStrandWaistband"
+    },
+    "LeftInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftInflexibleAnklet"
+    },
+    "Bhaca" : {
+      "@id" : "http://www.semanticweb.org/XBO#Bhaca"
+    },
+    "InflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#InflexibleArmlet"
+    },
+    "hasFather" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasFather",
+      "@type" : "@id"
+    },
+    "DoubleRightFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightFlexibleAnklet"
+    },
+    "hasPosition" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasPosition",
+      "@type" : "@id"
+    },
+    "Colour" : {
+      "@id" : "http://www.semanticweb.org/XBO#Colour"
+    },
+    "TabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#TabNecklace"
+    },
+    "Medium" : {
+      "@id" : "http://www.semanticweb.org/XBO#Medium"
+    },
+    "MultiRightInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightInflexibleAnklet"
+    },
+    "hasColour" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasColour",
+      "@type" : "@id"
+    },
+    "LargeSingleStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeSingleStrandNecklace"
+    },
+    "RightFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightFlexibleBracelet"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower"
+    },
+    "DoubleStreamHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleStreamHeadband"
+    },
+    "Flexible" : {
+      "@id" : "http://www.semanticweb.org/XBO#Flexible"
+    },
+    "SmallMultiStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallMultiStrandNecklace"
+    },
+    "StrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#StrandNecklace"
+    },
+    "FlexibleHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#FlexibleHeadband"
+    },
+    "DoubleStrandHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleStrandHeadband"
+    },
+    "DomainEntity" : {
+      "@id" : "http://www.semanticweb.org/XBO#DomainEntity"
+    },
+    "Man" : {
+      "@id" : "http://www.semanticweb.org/XBO#Man"
+    },
+    "MultiStrandHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiStrandHeadband"
+    },
+    "Toddlerhood" : {
+      "@id" : "http://www.semanticweb.org/XBO#Toddlerhood"
+    },
+    "DoubleRightInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightInflexibleArmlet"
+    },
+    "Tab" : {
+      "@id" : "http://www.semanticweb.org/XBO#Tab"
+    },
+    "Secondary" : {
+      "@id" : "http://www.semanticweb.org/XBO#Secondary"
+    },
+    "DoubleLeftInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftInflexibleBracelet"
+    },
+    "EarlyAdolescence" : {
+      "@id" : "http://www.semanticweb.org/XBO#EarlyAdolescence"
+    },
+    "RightInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightInflexibleAnklet"
+    },
+    "Ankle" : {
+      "@id" : "http://www.semanticweb.org/XBO#Ankle"
+    },
+    "LargeSingleTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeSingleTabNecklace"
+    },
+    "ageGroup" : {
+      "@id" : "http://www.semanticweb.org/XBO#ageGroup",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "commonName" : {
+      "@id" : "http://www.semanticweb.org/XBO#commonName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Wrist" : {
+      "@id" : "http://www.semanticweb.org/XBO#Wrist"
+    },
+    "Sex" : {
+      "@id" : "http://www.semanticweb.org/XBO#Sex"
+    },
+    "SingleRightFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleBracelet"
+    },
+    "LateChildhood" : {
+      "@id" : "http://www.semanticweb.org/XBO#LateChildhood"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/XBO#Person"
+    },
+    "DoubleTasselNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleTasselNecklace"
+    },
+    "hasUse" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasUse",
+      "@type" : "@id"
+    },
+    "Headband" : {
+      "@id" : "http://www.semanticweb.org/XBO#Headband"
+    },
+    "EarlyAdulthood" : {
+      "@id" : "http://www.semanticweb.org/XBO#EarlyAdulthood"
+    },
+    "hasSide" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasSide",
+      "@type" : "@id"
+    },
+    "Thembu" : {
+      "@id" : "http://www.semanticweb.org/XBO#Thembu"
+    },
+    "itemColour" : {
+      "@id" : "http://www.semanticweb.org/XBO#itemColour",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasBodyType" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasBodyType",
+      "@type" : "@id"
+    },
+    "MultiStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiStrandNecklace"
+    },
+    "itemUse" : {
+      "@id" : "http://www.semanticweb.org/XBO#itemUse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MultiRightFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightFlexibleAnklet"
+    },
+    "MultiFringeHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiFringeHeadband"
+    },
+    "SingleStrandWaistband" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleStrandWaistband"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "MiddleAdolescence" : {
+      "@id" : "http://www.semanticweb.org/XBO#MiddleAdolescence"
+    },
+    "MultiLeftInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftInflexibleAnklet"
+    },
+    "MultiTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiTabNecklace"
+    },
+    "DoubleRightFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightFlexibleBracelet"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "LateAdulthood" : {
+      "@id" : "http://www.semanticweb.org/XBO#LateAdulthood"
+    },
+    "itemDecoration" : {
+      "@id" : "http://www.semanticweb.org/XBO#itemDecoration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StreamHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#StreamHeadband"
+    },
+    "hasMother" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasMother",
+      "@type" : "@id"
+    },
+    "LeftFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftFlexibleAnklet"
+    },
+    "hasMaterial" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasMaterial",
+      "@type" : "@id"
+    },
+    "SingleStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleStrandNecklace"
+    },
+    "ValuePartition" : {
+      "@id" : "http://www.semanticweb.org/XBO#ValuePartition"
+    },
+    "Male" : {
+      "@id" : "http://www.semanticweb.org/XBO#Male"
+    },
+    "hasSize" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasSize",
+      "@type" : "@id"
+    },
+    "Fengu" : {
+      "@id" : "http://www.semanticweb.org/XBO#Fengu"
+    },
+    "Ritual" : {
+      "@id" : "http://www.semanticweb.org/XBO#Ritual"
+    },
+    "LargeMultiStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeMultiStrandNecklace"
+    },
+    "materialType" : {
+      "@id" : "http://www.semanticweb.org/XBO#materialType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SingleLeftInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftInflexibleBracelet"
+    },
+    "TabHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#TabHeadband"
+    },
+    "Xhosa" : {
+      "@id" : "http://www.semanticweb.org/XBO#Xhosa"
+    },
+    "bodyType" : {
+      "@id" : "http://www.semanticweb.org/XBO#bodyType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Childhood" : {
+      "@id" : "http://www.semanticweb.org/XBO#Childhood"
+    },
+    "Arm" : {
+      "@id" : "http://www.semanticweb.org/XBO#Arm"
+    },
+    "Tribe" : {
+      "@id" : "http://www.semanticweb.org/XBO#Tribe"
+    },
+    "BodyType" : {
+      "@id" : "http://www.semanticweb.org/XBO#BodyType"
+    },
+    "RightFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightFlexibleArmlet"
+    },
+    "MiddleChildhood" : {
+      "@id" : "http://www.semanticweb.org/XBO#MiddleChildhood"
+    },
+    "SingleLeftFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleBracelet"
+    },
+    "LeftFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftFlexibleArmlet"
+    },
+    "Head" : {
+      "@id" : "http://www.semanticweb.org/XBO#Head"
+    },
+    "StrandWaistband" : {
+      "@id" : "http://www.semanticweb.org/XBO#StrandWaistband"
+    },
+    "Large" : {
+      "@id" : "http://www.semanticweb.org/XBO#Large"
+    },
+    "Adolescence" : {
+      "@id" : "http://www.semanticweb.org/XBO#Adolescence"
+    },
+    "Multi" : {
+      "@id" : "http://www.semanticweb.org/XBO#Multi"
+    },
+    "Noble" : {
+      "@id" : "http://www.semanticweb.org/XBO#Noble"
+    },
+    "Quantity" : {
+      "@id" : "http://www.semanticweb.org/XBO#Quantity"
+    },
+    "Inflexible" : {
+      "@id" : "http://www.semanticweb.org/XBO#Inflexible"
+    },
+    "Tertiary" : {
+      "@id" : "http://www.semanticweb.org/XBO#Tertiary"
+    },
+    "hasRank" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasRank",
+      "@type" : "@id"
+    },
+    "MultiLeftFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleAnklet"
+    },
+    "LeftFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftFlexibleBracelet"
+    },
+    "SmallSingleTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallSingleTabNecklace"
+    },
+    "Infanthood" : {
+      "@id" : "http://www.semanticweb.org/XBO#Infanthood"
+    },
+    "Female" : {
+      "@id" : "http://www.semanticweb.org/XBO#Female"
+    },
+    "Anklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#Anklet"
+    },
+    "Rank" : {
+      "@id" : "http://www.semanticweb.org/XBO#Rank"
+    },
+    "Waist" : {
+      "@id" : "http://www.semanticweb.org/XBO#Waist"
+    },
+    "MultiRightInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightInflexibleBracelet"
+    },
+    "Size" : {
+      "@id" : "http://www.semanticweb.org/XBO#Size"
+    },
+    "SingleLeftFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleAnklet"
+    },
+    "Streamer" : {
+      "@id" : "http://www.semanticweb.org/XBO#Streamer"
+    },
+    "Middle" : {
+      "@id" : "http://www.semanticweb.org/XBO#Middle"
+    },
+    "Position" : {
+      "@id" : "http://www.semanticweb.org/XBO#Position"
+    },
+    "CharmNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#CharmNecklace"
+    },
+    "EarlyInfanthood" : {
+      "@id" : "http://www.semanticweb.org/XBO#EarlyInfanthood"
+    },
+    "FlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#FlexibleBracelet"
+    },
+    "DoubleStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleStrandNecklace"
+    },
+    "SingleLeftFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleArmlet"
+    },
+    "Tassel" : {
+      "@id" : "http://www.semanticweb.org/XBO#Tassel"
+    },
+    "SingleFringeHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleFringeHeadband"
+    },
+    "Decoration" : {
+      "@id" : "http://www.semanticweb.org/XBO#Decoration"
+    },
+    "SingleRightInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightInflexibleArmlet"
+    },
+    "hasSex" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasSex",
+      "@type" : "@id"
+    },
+    "Primary" : {
+      "@id" : "http://www.semanticweb.org/XBO#Primary"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "placementSide" : {
+      "@id" : "http://www.semanticweb.org/XBO#placementSide",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Ceremony" : {
+      "@id" : "http://www.semanticweb.org/XBO#Ceremony"
+    },
+    "LateAdolescence" : {
+      "@id" : "http://www.semanticweb.org/XBO#LateAdolescence"
+    },
+    "Upper" : {
+      "@id" : "http://www.semanticweb.org/XBO#Upper"
+    },
+    "Waistband" : {
+      "@id" : "http://www.semanticweb.org/XBO#Waistband"
+    },
+    "isWornOn" : {
+      "@id" : "http://www.semanticweb.org/XBO#isWornOn",
+      "@type" : "@id"
+    },
+    "SingleRightFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleAnklet"
+    },
+    "CollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#CollarNecklace"
+    },
+    "SingleRightInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightInflexibleBracelet"
+    },
+    "Synthetic" : {
+      "@id" : "http://www.semanticweb.org/XBO#Synthetic"
+    },
+    "SmallInflexibleCollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallInflexibleCollarNecklace"
+    },
+    "BeadworkEntity" : {
+      "@id" : "http://www.semanticweb.org/XBO#BeadworkEntity"
+    },
+    "FlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#FlexibleAnklet"
+    },
+    "MultiLeftInflexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftInflexibleArmlet"
+    },
+    "isWornBy" : {
+      "@id" : "http://www.semanticweb.org/XBO#isWornBy",
+      "@type" : "@id"
+    },
+    "MultiTabHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiTabHeadband"
+    },
+    "Neck" : {
+      "@id" : "http://www.semanticweb.org/XBO#Neck"
+    },
+    "LargeInflexibleCollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeInflexibleCollarNecklace"
+    },
+    "MultiRightFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightFlexibleArmlet"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+    },
+    "Necklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#Necklace"
+    },
+    "InflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#InflexibleBracelet"
+    },
+    "FringeHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#FringeHeadband"
+    },
+    "LargeDoubleStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeDoubleStrandNecklace"
+    },
+    "LargeMultiTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeMultiTabNecklace"
+    },
+    "Royal" : {
+      "@id" : "http://www.semanticweb.org/XBO#Royal"
+    },
+    "Bomvana" : {
+      "@id" : "http://www.semanticweb.org/XBO#Bomvana"
+    },
+    "SmallSingleStrandNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallSingleStrandNecklace"
+    },
+    "InflexibleHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#InflexibleHeadband"
+    },
+    "DoubleRightInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightInflexibleAnklet"
+    },
+    "SingleTasselNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleTasselNecklace"
+    },
+    "DoubleLeftInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftInflexibleAnklet"
+    },
+    "DoubleTabHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleTabHeadband"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "LargeDoubleTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeDoubleTabNecklace"
+    },
+    "MultiLeftFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleArmlet"
+    },
+    "SingleRightFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleArmlet"
+    },
+    "WhistleNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#WhistleNecklace"
+    },
+    "SingleTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleTabNecklace"
+    },
+    "MultiTasselNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiTasselNecklace"
+    },
+    "placementPosition" : {
+      "@id" : "http://www.semanticweb.org/XBO#placementPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MultiLeftFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleBracelet"
+    },
+    "Item" : {
+      "@id" : "http://www.semanticweb.org/XBO#Item"
+    },
+    "Natural" : {
+      "@id" : "http://www.semanticweb.org/XBO#Natural"
+    },
+    "Charm" : {
+      "@id" : "http://www.semanticweb.org/XBO#Charm"
+    },
+    "MultiRightFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightFlexibleBracelet"
+    },
+    "FlexibleCollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#FlexibleCollarNecklace"
+    },
+    "Small" : {
+      "@id" : "http://www.semanticweb.org/XBO#Small"
+    },
+    "SmallDoubleTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallDoubleTabNecklace"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "ChokerNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#ChokerNecklace"
+    },
+    "InflexibleCollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#InflexibleCollarNecklace"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "RightSide" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightSide"
+    },
+    "DoubleLeftFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleAnklet"
+    },
+    "SingleStreamHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleStreamHeadband"
+    },
+    "localName" : {
+      "@id" : "http://www.semanticweb.org/XBO#localName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "socialRank" : {
+      "@id" : "http://www.semanticweb.org/XBO#socialRank",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasChild" : {
+      "@id" : "http://www.semanticweb.org/XBO#hasChild",
+      "@type" : "@id"
+    },
+    "sexType" : {
+      "@id" : "http://www.semanticweb.org/XBO#sexType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EarlyChildhood" : {
+      "@id" : "http://www.semanticweb.org/XBO#EarlyChildhood"
+    },
+    "Strand" : {
+      "@id" : "http://www.semanticweb.org/XBO#Strand"
+    },
+    "Adulthood" : {
+      "@id" : "http://www.semanticweb.org/XBO#Adulthood"
+    },
+    "LeftInflexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#LeftInflexibleBracelet"
+    },
+    "SmallMultiTabNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#SmallMultiTabNecklace"
+    },
+    "DoubleLeftFlexibleBracelet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleBracelet"
+    },
+    "BodyRegion" : {
+      "@id" : "http://www.semanticweb.org/XBO#BodyRegion"
+    },
+    "DoubleFringeHeadband" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleFringeHeadband"
+    },
+    "RightFlexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#RightFlexibleAnklet"
+    },
+    "DoubleRightFlexibleArmlet" : {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightFlexibleArmlet"
+    },
+    "LargeFlexibleCollarNecklace" : {
+      "@id" : "http://www.semanticweb.org/XBO#LargeFlexibleCollarNecklace"
+    },
+    "SingleLeftInflexibleAnklet" : {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftInflexibleAnklet"
+    }
+  }
+}
