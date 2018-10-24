@@ -1,0 +1,2651 @@
+@prefix : <http://www.semanticweb.org/XBO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/XBO> .
+
+<http://www.semanticweb.org/XBO> rdf:type owl:Ontology ;
+                                  owl:versionIRI <http://www.semanticweb.org/XBO/1.0.0> ;
+                                  <http://purl.org/dc/terms/creator> "Loyd Tinarwo"@en ;
+                                  <http://purl.org/dc/terms/description> "Xhosa Beadwork Ontology (XBO) is a knowledge representation with a persective on  preservation, promotion, development and management of IK on Xhosa Beadwork." ;
+                                  <http://purl.org/dc/terms/title> "Xhosa Beadwork Ontology(XBO)"@en ;
+                                  rdfs:label "Xhosa Beadwork Ontology (XBO)"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/XBO#hasAgeGroup
+:hasAgeGroup rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "Relates a Person or Item and the required  Age  group associated with the use of Item. hasAgeGroup specifies the Age interval or range for which the Item or Person is valid. This allows specifying that a certain  Item is valid only for a certain Age group." ;
+             rdfs:label "hasAgeGroup" .
+
+
+###  http://www.semanticweb.org/XBO#hasBodyType
+:hasBodyType rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "Relates Item to the type of body that the Item is equipped with as determined in the entity ItemBody." ;
+             rdfs:label "hasBodyType" .
+
+
+###  http://www.semanticweb.org/XBO#hasChild
+:hasChild rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:comment "Relates a Person to another Person (object) who is a child of that Person." ;
+          rdfs:label "hasChild" .
+
+
+###  http://www.semanticweb.org/XBO#hasColour
+:hasColour rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "Relates an Item to the presence of Colour in the makeup or content of an Item." ;
+           rdfs:label "hasColour" .
+
+
+###  http://www.semanticweb.org/XBO#hasDecoration
+:hasDecoration rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:comment "Relates a specific elaborate design feature or theme of Decoration to an Item." ;
+               rdfs:label "hasDecoration" .
+
+
+###  http://www.semanticweb.org/XBO#hasFather
+:hasFather rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "Associates a Person to another Person who is the biological Father of that Person." ;
+           rdfs:label "hasFather" .
+
+
+###  http://www.semanticweb.org/XBO#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "Associates an Item to a type of underlying physical Material used to make or is incorporated in the Item." ;
+             rdfs:label "hasMaterial" .
+
+
+###  http://www.semanticweb.org/XBO#hasMother
+:hasMother rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "Relates a Person to another Person who is the biological Mother of that Person." ;
+           rdfs:label "hasMother" .
+
+
+###  http://www.semanticweb.org/XBO#hasParent
+:hasParent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "Associates  a Person (object)  to another to another Person who is a parent of that Person." ;
+           rdfs:label "hasParent" .
+
+
+###  http://www.semanticweb.org/XBO#hasPosition
+:hasPosition rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "Associates the Item with the recommended Position that denotes a point within some BodyRegion where the Item is intended to occupy or be placed or worn." ;
+             rdfs:label "hasPosition" .
+
+
+###  http://www.semanticweb.org/XBO#hasQuantity
+:hasQuantity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "Associates an Item with a unit of measure Quantity, where Quantity is how much or proportion there is of an Item, Colour or Material. For example, this allows specifying that a certain Quantity is valid only for a certain Item." ;
+             rdfs:label "hasQuantity" .
+
+
+###  http://www.semanticweb.org/XBO#hasRank
+:hasRank rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:comment "Relates a Person or Item to the appropriate type of level or rank or status held by a Person or Item according to classifications or social structure defined in Rank." ;
+         rdfs:label "hasRank" .
+
+
+###  http://www.semanticweb.org/XBO#hasSex
+:hasSex rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :DomainEntity ;
+        rdfs:range :Sex ;
+        rdfs:comment "Links a Person or Item to the values Male or Female  describing Sex. Person or Item is related to an instance of Sex." ;
+        rdfs:label "hasSex" .
+
+
+###  http://www.semanticweb.org/XBO#hasSide
+:hasSide rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:comment "Relates an Item to the Side on which to put the Item relative to a centre or reference location such as the trunk of the human body." ;
+         rdfs:label "hasSide" .
+
+
+###  http://www.semanticweb.org/XBO#hasSize
+:hasSize rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:comment "Associates the physical magnitude or dimensions used to represent an Item to Size." ;
+         rdfs:label "hasSize" .
+
+
+###  http://www.semanticweb.org/XBO#hasSpouse
+:hasSpouse rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "Associates a Person to another Person in a shared activity of common interest such as a partnership of traditional marriage or common law marriage or  civil union." ;
+           rdfs:label "hasSpouse" .
+
+
+###  http://www.semanticweb.org/XBO#hasTribe
+:hasTribe rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:comment "Associates an Item or Person to a Tribe meaning a group or social division of people an Item or Person belongs to. Tribe is a characteristic such as Thembu, Pondo or Bomvana." ;
+          rdfs:label "hasTribe" .
+
+
+###  http://www.semanticweb.org/XBO#hasUse
+:hasUse rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:comment "Relates an Item or Person to the appropriate or recommended category of Use for which the Item is intended." ;
+        rdfs:label "hasUse" .
+
+
+###  http://www.semanticweb.org/XBO#isWornBy
+:isWornBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:comment "Links the Item to the recommended  Person for whom the Item is considered suitable or  eligible  Age to adorn or wear  or put on the   Item." ;
+          rdfs:label "isWornBy" .
+
+
+###  http://www.semanticweb.org/XBO#isWornOn
+:isWornOn rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:comment "Associates an Item with a particular  place, location or region of the human body occupied by an Item as represented in BodyRegion." ;
+          rdfs:label "isWornOn" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/XBO#ageGroup
+:ageGroup rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Age ;
+          rdfs:range xsd:double ;
+          rdfs:comment "Specific Age group value of a Person or suitable age group value intended for an Item." ;
+          rdfs:label "ageGroup" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "age group" .
+
+
+###  http://www.semanticweb.org/XBO#bodyType
+:bodyType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :BodyType ;
+          rdfs:range xsd:string ;
+          rdfs:label "bodyType" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "body type" .
+
+
+###  http://www.semanticweb.org/XBO#commonName
+:commonName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Item ;
+            rdfs:range xsd:string ;
+            rdfs:label "commonName" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "common name" .
+
+
+###  http://www.semanticweb.org/XBO#enthicTribe
+:enthicTribe rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Tribe ;
+             rdfs:range xsd:string ;
+             rdfs:label "enthicTribe" ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "ethnic Tribe" .
+
+
+###  http://www.semanticweb.org/XBO#itemColour
+:itemColour rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Colour ;
+            rdfs:range xsd:string ;
+            rdfs:label "itemColour" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "item colour" .
+
+
+###  http://www.semanticweb.org/XBO#itemDecoration
+:itemDecoration rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Decoration ;
+                rdfs:range xsd:string ;
+                rdfs:label "itemDecoration" ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "item decoration" .
+
+
+###  http://www.semanticweb.org/XBO#itemQuantity
+:itemQuantity rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Quantity ;
+              rdfs:range xsd:integer ;
+              rdfs:label "itemQuantity" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "item quantity" .
+
+
+###  http://www.semanticweb.org/XBO#itemSize
+:itemSize rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Size ;
+          rdfs:range xsd:double ;
+          rdfs:label "itemSize" ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "item size" .
+
+
+###  http://www.semanticweb.org/XBO#itemUse
+:itemUse rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Use ;
+         rdfs:range xsd:string ;
+         rdfs:label "itemUse" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "item use" .
+
+
+###  http://www.semanticweb.org/XBO#localName
+:localName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Item ;
+           rdfs:range xsd:string ;
+           rdfs:label "localName" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "local name" .
+
+
+###  http://www.semanticweb.org/XBO#materialType
+:materialType rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Material ;
+              rdfs:range xsd:string ;
+              rdfs:label "materialType" ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "material Type" .
+
+
+###  http://www.semanticweb.org/XBO#personType
+:personType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:label "personType" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "person Type" .
+
+
+###  http://www.semanticweb.org/XBO#placementPosition
+:placementPosition rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Position ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "placementPosition" ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "placement position" .
+
+
+###  http://www.semanticweb.org/XBO#placementRegion
+:placementRegion rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :BodyRegion ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "placementRegion" ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "placement Region" .
+
+
+###  http://www.semanticweb.org/XBO#placementSide
+:placementSide rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Side ;
+               rdfs:range xsd:string ;
+               rdfs:label "placementSide" ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "placement  side" .
+
+
+###  http://www.semanticweb.org/XBO#sexType
+:sexType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Sex ;
+         rdfs:range xsd:string ;
+         rdfs:label "sexType" ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "gender type" ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "sex  type" .
+
+
+###  http://www.semanticweb.org/XBO#socialRank
+:socialRank rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Rank ;
+            rdfs:range xsd:string ;
+            rdfs:label "socialRank" ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "social rank" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/XBO#Adolescence
+:Adolescence rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Age
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :ageGroup ;
+                                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                               owl:onDatatype xsd:double ;
+                                                                               owl:withRestrictions ( [ xsd:minExclusive "13.0"^^xsd:double
+                                                                                                      ]
+                                                                                                      [ xsd:maxExclusive "18.0"^^xsd:double
+                                                                                                      ]
+                                                                                                    )
+                                                                             ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Age ;
+             rdfs:label "Adolescence"@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Adolescence"@en .
+
+
+###  http://www.semanticweb.org/XBO#Adulthood
+:Adulthood rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Age
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :ageGroup ;
+                                                        owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                             owl:onDatatype xsd:double ;
+                                                                             owl:withRestrictions ( [ xsd:minExclusive "19.0"^^xsd:double
+                                                                                                    ]
+                                                                                                    [ xsd:maxExclusive "120.0"^^xsd:double
+                                                                                                    ]
+                                                                                                  )
+                                                                           ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Age ;
+           rdfs:label "Adulthood"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Adulthood"@en .
+
+
+###  http://www.semanticweb.org/XBO#Age
+:Age rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:unionOf ( :Adolescence
+                                         :Adulthood
+                                         :Childhood
+                                         :Infanthood
+                                       )
+                         ] ;
+     rdfs:subClassOf :ValuePartition ;
+     rdfs:comment "Age  is a  ValuePartition that describes only values from  subclasses Infanthood, Adolescence, Childhood or Adulthood . NB These subclasses can themselves be further partitioned." ;
+     rdfs:label "Age"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Age"@en .
+
+
+###  http://www.semanticweb.org/XBO#Ankle
+:Ankle rdf:type owl:Class ;
+       rdfs:subClassOf :BodyRegion ;
+       rdfs:label "Ankle"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Ankle"@en .
+
+
+###  http://www.semanticweb.org/XBO#Anklet
+:Anklet rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Item
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :isWornOn ;
+                                                     owl:someValuesFrom :Ankle
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :Item ;
+        rdfs:comment "The class  Anklet is used for concepts that represent a beadwork Item in form of a  string or band or ring worn around the Ankle." ;
+        rdfs:label "Anklet"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Anklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#Arm
+:Arm rdf:type owl:Class ;
+     rdfs:subClassOf :BodyRegion ;
+     rdfs:label "Arm"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Arm"@en .
+
+
+###  http://www.semanticweb.org/XBO#Armlet
+:Armlet rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Item
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :isWornOn ;
+                                                     owl:someValuesFrom :Arm
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :Item ;
+        rdfs:comment "The class  Armlet is used to represent a beadwork Item  in form of a string or band or ring worn around the Upper Arm or  high on the Arm" ;
+        rdfs:label "Armlet"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Armlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#BeadworkEntity
+:BeadworkEntity rdf:type owl:Class ;
+                rdfs:subClassOf :DomainEntity ;
+                owl:disjointWith :PersonEntity ;
+                rdfs:comment "Class  BeadworkEntity comprise concepts that represent objects or items of beadwork and the associated description of the item with respect to the accepted statues of Xhosa Beadwork." ;
+                rdfs:label "BeadworkEntity"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Beadwork Entity"@en .
+
+
+###  http://www.semanticweb.org/XBO#Bhaca
+:Bhaca rdf:type owl:Class ;
+       rdfs:subClassOf :Tribe ;
+       rdfs:label "Bhaca"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Bhaca"@en .
+
+
+###  http://www.semanticweb.org/XBO#BodyRegion
+:BodyRegion rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Ankle
+                                                :Arm
+                                                :Head
+                                                :Neck
+                                                :Shin
+                                                :Waist
+                                                :Wrist
+                                              )
+                                ] ;
+            rdfs:subClassOf :ValuePartition ;
+            rdfs:comment "BodyRegion is a  ValuePartition that describes only values from  subclasses Neck, Waist, Arm, Shin, Head, Ankle or Wrist. NB These subclasses can themselves be further partitioned." ;
+            rdfs:label "BodyRegion"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Body Region"@en .
+
+
+###  http://www.semanticweb.org/XBO#BodyType
+:BodyType rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :Flexible
+                                              :Inflexible
+                                            )
+                              ] ;
+          rdfs:subClassOf :ValuePartition ;
+          rdfs:comment "BodyType is a  ValuePartition that describes only values from  subclasses  Flexible  or Inflexible. NB These subclasses can themselves be further partitioned." ;
+          rdfs:label "BodyType"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Body Type"@en .
+
+
+###  http://www.semanticweb.org/XBO#Bomvana
+:Bomvana rdf:type owl:Class ;
+         rdfs:subClassOf :Tribe ;
+         rdfs:label "Bomvana"@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Bomvana"@en .
+
+
+###  http://www.semanticweb.org/XBO#Bracelet
+:Bracelet rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Item
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :isWornOn ;
+                                                       owl:someValuesFrom :Wrist
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :Item ;
+          rdfs:comment "The class Bracelet represent an article or beadwork Item in form of a loop or band encircling or worn around the Wrist." ;
+          rdfs:label "Bracelet"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Bracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#Ceremony
+:Ceremony rdf:type owl:Class ;
+          rdfs:subClassOf :Use ;
+          owl:disjointWith :Ritual ;
+          rdfs:label "Ceremony"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Ceremony"@en .
+
+
+###  http://www.semanticweb.org/XBO#Charm
+:Charm rdf:type owl:Class ;
+       rdfs:subClassOf :Decoration ;
+       owl:disjointWith :Fringe ,
+                        :Strand ,
+                        :Streamer ,
+                        :Tab ,
+                        :Tassel ;
+       rdfs:label "Charm"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Charm"@en .
+
+
+###  http://www.semanticweb.org/XBO#CharmNecklace
+:CharmNecklace rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :hasDecoration ;
+                                                            owl:someValuesFrom :Charm
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :Necklace ;
+               rdfs:label "CharmNecklace"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "CharmNecklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#Childhood
+:Childhood rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Age
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :ageGroup ;
+                                                        owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                             owl:onDatatype xsd:double ;
+                                                                             owl:withRestrictions ( [ xsd:minExclusive "2.0"^^xsd:double
+                                                                                                    ]
+                                                                                                    [ xsd:maxExclusive "12.0"^^xsd:double
+                                                                                                    ]
+                                                                                                  )
+                                                                           ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Age ;
+           rdfs:label "Childhood"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Childhood"@en .
+
+
+###  http://www.semanticweb.org/XBO#ChokerNecklace
+:ChokerNecklace rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasPosition ;
+                                                             owl:someValuesFrom :Upper
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Necklace ;
+                rdfs:label "ChokerNecklace"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "ChokerNecklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#CollarNecklace
+:CollarNecklace rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasPosition ;
+                                                             owl:someValuesFrom :Lower
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Necklace ;
+                rdfs:label "CollarNecklace"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "CollarNecklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#Colour
+:Colour rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :Primary
+                                            :Secondary
+                                            :Tertiary
+                                          )
+                            ] ;
+        rdfs:subClassOf :ValuePartition ;
+        rdfs:comment "Colour is a  ValuePartition that describes only values from  subclasses Primary, Secondary or Tertiary. NB These subclasses can themselves be further partitioned." ;
+        rdfs:label "Colour"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Umbala"@xh ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Colour"@en .
+
+
+###  http://www.semanticweb.org/XBO#Common
+:Common rdf:type owl:Class ;
+        rdfs:subClassOf :Rank ;
+        rdfs:label "Common"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Noble"@en .
+
+
+###  http://www.semanticweb.org/XBO#Decoration
+:Decoration rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Charm
+                                                :Fringe
+                                                :Strand
+                                                :Streamer
+                                                :Tab
+                                                :Tassel
+                                              )
+                                ] ;
+            rdfs:subClassOf :ValuePartition ;
+            rdfs:comment "Decoration is a  ValuePartition that describes only values from  subclasses Tab, Tassel, Streamer, Strand, Charm or Fringe. NB These subclasses can themselves be further partitioned." ;
+            rdfs:label "Decoration"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Decoration"@en .
+
+
+###  http://www.semanticweb.org/XBO#DomainEntity
+:DomainEntity rdf:type owl:Class ;
+              rdfs:comment "The entire Xhosa Beadwork Ontology (XBO) is underneath DomainEntity. We use DomainEntity for  housekeeping, to manage the routine tasks that must be done in order for efficient  modelling and XBO functioning i.e. as a common super class in case of a property with multiple domains or ranges." ;
+              rdfs:label "DomainEntity"@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Domain Entity"@en .
+
+
+###  http://www.semanticweb.org/XBO#Double
+:Double rdf:type owl:Class ;
+        rdfs:subClassOf :Quantity ;
+        rdfs:label "Double"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Double"@en .
+
+
+###  http://www.semanticweb.org/XBO#DoubleFringeHeadband
+:DoubleFringeHeadband rdf:type owl:Class ;
+                      rdfs:subClassOf :FringeHeadband .
+
+
+###  http://www.semanticweb.org/XBO#DoubleLeftFlexibleAnklet
+:DoubleLeftFlexibleAnklet rdf:type owl:Class ;
+                          rdfs:subClassOf :LeftFlexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleLeftFlexibleArmlet
+:DoubleLeftFlexibleArmlet rdf:type owl:Class ;
+                          rdfs:subClassOf :LeftFlexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleLeftFlexibleBracelet
+:DoubleLeftFlexibleBracelet rdf:type owl:Class ;
+                            rdfs:subClassOf :LeftFlexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleLeftInflexibleAnklet
+:DoubleLeftInflexibleAnklet rdf:type owl:Class ;
+                            rdfs:subClassOf :LeftInflexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleLeftInflexibleArmlet
+:DoubleLeftInflexibleArmlet rdf:type owl:Class ;
+                            rdfs:subClassOf :LeftInflexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleLeftInflexibleBracelet
+:DoubleLeftInflexibleBracelet rdf:type owl:Class ;
+                              rdfs:subClassOf :LeftInflexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleRightFlexibleAnklet
+:DoubleRightFlexibleAnklet rdf:type owl:Class ;
+                           rdfs:subClassOf :RightFlexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleRightFlexibleArmlet
+:DoubleRightFlexibleArmlet rdf:type owl:Class ;
+                           rdfs:subClassOf :RightFlexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleRightFlexibleBracelet
+:DoubleRightFlexibleBracelet rdf:type owl:Class ;
+                             rdfs:subClassOf :RightFlexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleRightInflexibleAnklet
+:DoubleRightInflexibleAnklet rdf:type owl:Class ;
+                             rdfs:subClassOf :RightInflexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleRightInflexibleArmlet
+:DoubleRightInflexibleArmlet rdf:type owl:Class ;
+                             rdfs:subClassOf :RightInflexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleRightInflexibleBracelet
+:DoubleRightInflexibleBracelet rdf:type owl:Class ;
+                               rdfs:subClassOf :RightInflexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#DoubleStrandHeadband
+:DoubleStrandHeadband rdf:type owl:Class ;
+                      rdfs:subClassOf :StrandHeadband .
+
+
+###  http://www.semanticweb.org/XBO#DoubleStrandNecklace
+:DoubleStrandNecklace rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :StrandNecklace
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasQuantity ;
+                                                                   owl:someValuesFrom :Double
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :StrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#DoubleStrandWaistband
+:DoubleStrandWaistband rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :StrandWaistband
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasQuantity ;
+                                                                    owl:someValuesFrom :Double
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :StrandWaistband ;
+                       rdfs:label "DoubleStrandWaistband"@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DoubleStrandWaistband"@en .
+
+
+###  http://www.semanticweb.org/XBO#DoubleStreamHeadband
+:DoubleStreamHeadband rdf:type owl:Class ;
+                      rdfs:subClassOf :StreamHeadband .
+
+
+###  http://www.semanticweb.org/XBO#DoubleTabHeadband
+:DoubleTabHeadband rdf:type owl:Class ;
+                   rdfs:subClassOf :TabHeadband .
+
+
+###  http://www.semanticweb.org/XBO#DoubleTabNecklace
+:DoubleTabNecklace rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :TabNecklace
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasQuantity ;
+                                                                owl:someValuesFrom :Double
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] .
+
+
+###  http://www.semanticweb.org/XBO#DoubleTasselNecklace
+:DoubleTasselNecklace rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :TasselNecklace
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasQuantity ;
+                                                                   owl:someValuesFrom :Double
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :TasselNecklace .
+
+
+###  http://www.semanticweb.org/XBO#EarlyAdolescence
+:EarlyAdolescence rdf:type owl:Class ;
+                  rdfs:subClassOf :Adolescence ;
+                  rdfs:label "EarlyAdolescence"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "EarlyAdolescence"@en .
+
+
+###  http://www.semanticweb.org/XBO#EarlyAdulthood
+:EarlyAdulthood rdf:type owl:Class ;
+                rdfs:subClassOf :Adulthood ;
+                rdfs:label "EarlyAdulthood"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "EarlyAdulthood"@en .
+
+
+###  http://www.semanticweb.org/XBO#EarlyChildhood
+:EarlyChildhood rdf:type owl:Class ;
+                rdfs:subClassOf :Childhood ;
+                rdfs:label "EarlyChildhood"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "EarlyChildhood"@en .
+
+
+###  http://www.semanticweb.org/XBO#EarlyInfanthood
+:EarlyInfanthood rdf:type owl:Class ;
+                 rdfs:subClassOf :Infanthood ;
+                 owl:disjointWith :Toddlerhood ;
+                 rdfs:label "EarlyInfanthood"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "EarlyInfanthood"@en .
+
+
+###  http://www.semanticweb.org/XBO#Female
+:Female rdf:type owl:Class ;
+        rdfs:subClassOf :Sex ;
+        owl:disjointWith :Male ;
+        rdfs:label "Female"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "F"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Female"@en .
+
+
+###  http://www.semanticweb.org/XBO#Fengu
+:Fengu rdf:type owl:Class ;
+       rdfs:subClassOf :Tribe ;
+       rdfs:label "Fengu"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Fengu"@en .
+
+
+###  http://www.semanticweb.org/XBO#Flexible
+:Flexible rdf:type owl:Class ;
+          rdfs:subClassOf :BodyType ;
+          owl:disjointWith :Inflexible ;
+          rdfs:label "Flexible"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Flexible"@en .
+
+
+###  http://www.semanticweb.org/XBO#FlexibleAnklet
+:FlexibleAnklet rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Anklet
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasBodyType ;
+                                                             owl:someValuesFrom :Flexible
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                owl:disjointWith :InflexibleAnklet ;
+                rdfs:label "FlexibleAnklet"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "FlexibleAnklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#FlexibleArmlet
+:FlexibleArmlet rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Armlet
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasBodyType ;
+                                                             owl:someValuesFrom :Flexible
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                owl:disjointWith :InflexibleArmlet ;
+                rdfs:label "FlexibleArmlet"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "FlexibleArmlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#FlexibleBracelet
+:FlexibleBracelet rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Bracelet
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasBodyType ;
+                                                               owl:someValuesFrom :Flexible
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  owl:disjointWith :InflexibleBracelet ;
+                  rdfs:label "FlexibleBracelet"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "FlexibleBracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#FlexibleCollarNecklace
+:FlexibleCollarNecklace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :CollarNecklace
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasBodyType ;
+                                                                     owl:someValuesFrom :Flexible
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :CollarNecklace ;
+                        owl:disjointWith :InflexibleCollarNecklace .
+
+
+###  http://www.semanticweb.org/XBO#FlexibleHeadband
+:FlexibleHeadband rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Headband
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasBodyType ;
+                                                               owl:someValuesFrom :Flexible
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  owl:disjointWith :InflexibleHeadband ;
+                  rdfs:label "FlexibleHeadband"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "FlexibleHeadband"@en .
+
+
+###  http://www.semanticweb.org/XBO#Fringe
+:Fringe rdf:type owl:Class ;
+        rdfs:subClassOf :Decoration ;
+        owl:disjointWith :Strand ,
+                         :Streamer ,
+                         :Tab ,
+                         :Tassel .
+
+
+###  http://www.semanticweb.org/XBO#FringeHeadband
+:FringeHeadband rdf:type owl:Class ;
+                rdfs:subClassOf :FlexibleHeadband .
+
+
+###  http://www.semanticweb.org/XBO#Head
+:Head rdf:type owl:Class ;
+      rdfs:subClassOf :BodyRegion ;
+      rdfs:label "Head"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Head"@en .
+
+
+###  http://www.semanticweb.org/XBO#Headband
+:Headband rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Item
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :isWornOn ;
+                                                       owl:someValuesFrom :Head
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :Item ;
+          rdfs:comment "The class Headband designates a beadwork Item or band or narrow strip worn  around the Head." ;
+          rdfs:label "Headband"@en ;
+          <http://www.w3.org/2004/02/skos/core#broader> "Item"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Headband"@en .
+
+
+###  http://www.semanticweb.org/XBO#Infanthood
+:Infanthood rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :Age
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :ageGroup ;
+                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:double ;
+                                                                              owl:withRestrictions ( [ xsd:minExclusive "0.0"^^xsd:double
+                                                                                                     ]
+                                                                                                     [ xsd:maxExclusive "2.0"^^xsd:double
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :Age ;
+            rdfs:label "Infanthood"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Infanthood"@en .
+
+
+###  http://www.semanticweb.org/XBO#Inflexible
+:Inflexible rdf:type owl:Class ;
+            rdfs:subClassOf :BodyType ;
+            rdfs:label "Inflexible"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Inflexible"@en .
+
+
+###  http://www.semanticweb.org/XBO#InflexibleAnklet
+:InflexibleAnklet rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Anklet
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasBodyType ;
+                                                               owl:someValuesFrom :Inflexible
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:label "InflexibleAnklet" ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "InflexibleAnklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#InflexibleArmlet
+:InflexibleArmlet rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Armlet
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasBodyType ;
+                                                               owl:someValuesFrom :Inflexible
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:label "InflexibleArmlet"@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "InflexibleArmlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#InflexibleBracelet
+:InflexibleBracelet rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :Bracelet
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasBodyType ;
+                                                                 owl:someValuesFrom :Inflexible
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:label "InflexibleBracelet"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "InflexibleBracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#InflexibleCollarNecklace
+:InflexibleCollarNecklace rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :CollarNecklace
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasBodyType ;
+                                                                       owl:someValuesFrom :Inflexible
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :CollarNecklace .
+
+
+###  http://www.semanticweb.org/XBO#InflexibleHeadband
+:InflexibleHeadband rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :Headband
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasBodyType ;
+                                                                 owl:someValuesFrom :Inflexible
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:label "InflexibleHeadband"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "InflexibleHeadband"@en .
+
+
+###  http://www.semanticweb.org/XBO#Item
+:Item rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( :Anklet
+                                          :Armlet
+                                          :Bracelet
+                                          :Headband
+                                          :Necklace
+                                          :Waistband
+                                        )
+                          ] ;
+      rdfs:subClassOf [ owl:intersectionOf ( :BeadworkEntity
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasAgeGroup ;
+                                               owl:someValuesFrom :Age
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasBodyType ;
+                                               owl:someValuesFrom :BodyType
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasColour ;
+                                               owl:someValuesFrom :Colour
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasDecoration ;
+                                               owl:someValuesFrom :Decoration
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasMaterial ;
+                                               owl:someValuesFrom :Material
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasPosition ;
+                                               owl:someValuesFrom :Position
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasQuantity ;
+                                               owl:someValuesFrom :Quantity
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasRank ;
+                                               owl:someValuesFrom :Rank
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasSex ;
+                                               owl:someValuesFrom :Sex
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasSide ;
+                                               owl:someValuesFrom :Side
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasSize ;
+                                               owl:someValuesFrom :Size
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasTribe ;
+                                               owl:someValuesFrom :Tribe
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasUse ;
+                                               owl:someValuesFrom :Use
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :isWornBy ;
+                                               owl:someValuesFrom :Person
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :isWornOn ;
+                                               owl:someValuesFrom :BodyRegion
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+      rdfs:comment "Item is used for concepts that represent a tangible or physical visible Item of beadwork either as a collection or as a single Item of beadwork." ;
+      rdfs:label "Item"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Item"@en .
+
+
+###  http://www.semanticweb.org/XBO#Large
+:Large rdf:type owl:Class ;
+       rdfs:subClassOf :Size ;
+       rdfs:label "Large"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Large"@en .
+
+
+###  http://www.semanticweb.org/XBO#LargeDoubleStrandNecklace
+:LargeDoubleStrandNecklace rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :DoubleStrandNecklace
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasSize ;
+                                                                        owl:someValuesFrom :Large
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :DoubleStrandNecklace ;
+                           owl:disjointWith :SmallDoubleStrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeDoubleTabNecklace
+:LargeDoubleTabNecklace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :DoubleTabNecklace
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasSize ;
+                                                                     owl:someValuesFrom :Large
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        owl:disjointWith :SmallDoubleTabNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeFlexibleCollarNecklace
+:LargeFlexibleCollarNecklace rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( :FlexibleCollarNecklace
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :hasSize ;
+                                                                          owl:someValuesFrom :Large
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf :FlexibleCollarNecklace ;
+                             owl:disjointWith :SmallFlexibleCollarNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeInflexibleCollarNecklace
+:LargeInflexibleCollarNecklace rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( :InflexibleCollarNecklace
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :hasSize ;
+                                                                            owl:someValuesFrom :Large
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf :InflexibleCollarNecklace ;
+                               owl:disjointWith :SmallInflexibleCollarNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeMultiStrandNecklace
+:LargeMultiStrandNecklace rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :MultiStrandNecklace
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasSize ;
+                                                                       owl:someValuesFrom :Large
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :MultiStrandNecklace ;
+                          owl:disjointWith :SmallMultiStrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeMultiTabNecklace
+:LargeMultiTabNecklace rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :MultiTabNecklace
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasSize ;
+                                                                    owl:someValuesFrom :Large
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       owl:disjointWith :SmallMultiTabNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeSingleStrandNecklace
+:LargeSingleStrandNecklace rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SingleStrandNecklace
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasSize ;
+                                                                        owl:someValuesFrom :Large
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :SingleStrandNecklace ;
+                           owl:disjointWith :SmallSingleStrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LargeSingleTabNecklace
+:LargeSingleTabNecklace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :SingleTabNecklace
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasSize ;
+                                                                     owl:someValuesFrom :Large
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        owl:disjointWith :SmallSingleTabNecklace .
+
+
+###  http://www.semanticweb.org/XBO#LateAdolescence
+:LateAdolescence rdf:type owl:Class ;
+                 rdfs:subClassOf :Adolescence ;
+                 rdfs:label "LateAdolescence"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "LateAdolescence"@en .
+
+
+###  http://www.semanticweb.org/XBO#LateAdulthood
+:LateAdulthood rdf:type owl:Class ;
+               rdfs:subClassOf :Adulthood ;
+               rdfs:label "LateAdulthood"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "LateAdulthood"@en .
+
+
+###  http://www.semanticweb.org/XBO#LateChildhood
+:LateChildhood rdf:type owl:Class ;
+               rdfs:subClassOf :Childhood ;
+               rdfs:label "LateChildhood"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "LateChildhood"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftFlexibleAnklet
+:LeftFlexibleAnklet rdf:type owl:Class ;
+                    rdfs:subClassOf :FlexibleAnklet ;
+                    rdfs:label "LeftFlexibleAnklet"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LeftFlexibleAnklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftFlexibleArmlet
+:LeftFlexibleArmlet rdf:type owl:Class ;
+                    rdfs:subClassOf :FlexibleArmlet ;
+                    rdfs:label "LeftFlexibleArmlet"@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LeftFlexibleArmlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftFlexibleBracelet
+:LeftFlexibleBracelet rdf:type owl:Class ;
+                      rdfs:subClassOf :FlexibleBracelet ;
+                      rdfs:label "LeftFlexibleBracelet"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "LeftFlexibleBracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftInflexibleAnklet
+:LeftInflexibleAnklet rdf:type owl:Class ;
+                      rdfs:subClassOf :InflexibleAnklet ;
+                      rdfs:label "LeftInflexibleAnklet"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "LeftInflexibleAnklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftInflexibleArmlet
+:LeftInflexibleArmlet rdf:type owl:Class ;
+                      rdfs:subClassOf :InflexibleArmlet ;
+                      rdfs:label "LeftInflexibleArmlet"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "LeftInflexibleArmlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftInflexibleBracelet
+:LeftInflexibleBracelet rdf:type owl:Class ;
+                        rdfs:subClassOf :InflexibleBracelet ;
+                        rdfs:label "LeftInflexibleBracelet"@en ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "LeftInflexibleBracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#LeftSide
+:LeftSide rdf:type owl:Class ;
+          rdfs:subClassOf :Side ;
+          owl:disjointWith :RightSide ;
+          rdfs:label "LeftSide"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Left"@en .
+
+
+###  http://www.semanticweb.org/XBO#Lower
+:Lower rdf:type owl:Class ;
+       rdfs:subClassOf :Position ;
+       rdfs:label "Lower"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Lower"@en .
+
+
+###  http://www.semanticweb.org/XBO#Male
+:Male rdf:type owl:Class ;
+      rdfs:subClassOf :Sex ;
+      rdfs:label "Male"@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "M"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Male"@en .
+
+
+###  http://www.semanticweb.org/XBO#Man
+:Man rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :Person
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasSex ;
+                                                  owl:someValuesFrom :Male
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :Person ;
+     owl:disjointWith :Woman ;
+     rdfs:label "Man"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Man"@en .
+
+
+###  http://www.semanticweb.org/XBO#Material
+:Material rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :Natural
+                                              :Synthetic
+                                            )
+                              ] ;
+          rdfs:subClassOf :ValuePartition ;
+          rdfs:comment "Material is a  ValuePartition that describes only values from  subclasses Natural or Synthetic. NB These subclasses can themselves be further partitioned." ;
+          rdfs:label "Material"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Material"@en .
+
+
+###  http://www.semanticweb.org/XBO#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :Size ;
+        rdfs:label "Medium"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Medium"@en .
+
+
+###  http://www.semanticweb.org/XBO#Middle
+:Middle rdf:type owl:Class ;
+        rdfs:subClassOf :Position ;
+        rdfs:label "Middle"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Middle"@en .
+
+
+###  http://www.semanticweb.org/XBO#MiddleAdolescence
+:MiddleAdolescence rdf:type owl:Class ;
+                   rdfs:subClassOf :Adolescence ;
+                   rdfs:label "MiddleAdolescence"@en ;
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "MiddleAdolescence"@en .
+
+
+###  http://www.semanticweb.org/XBO#MiddleAdulthood
+:MiddleAdulthood rdf:type owl:Class ;
+                 rdfs:subClassOf :Adulthood ;
+                 rdfs:label "MiddleAdulthood"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "MiddleAdulthood"@en .
+
+
+###  http://www.semanticweb.org/XBO#MiddleChildhood
+:MiddleChildhood rdf:type owl:Class ;
+                 rdfs:subClassOf :Childhood ;
+                 rdfs:label "MiddleChildhood"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "MiddleChildhood"@en .
+
+
+###  http://www.semanticweb.org/XBO#Multi
+:Multi rdf:type owl:Class ;
+       rdfs:subClassOf :Quantity ;
+       rdfs:label "Multi"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Multi"@en .
+
+
+###  http://www.semanticweb.org/XBO#MultiFringeHeadband
+:MultiFringeHeadband rdf:type owl:Class ;
+                     rdfs:subClassOf :FringeHeadband .
+
+
+###  http://www.semanticweb.org/XBO#MultiLeftFlexibleAnklet
+:MultiLeftFlexibleAnklet rdf:type owl:Class ;
+                         rdfs:subClassOf :LeftFlexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#MultiLeftFlexibleArmlet
+:MultiLeftFlexibleArmlet rdf:type owl:Class ;
+                         rdfs:subClassOf :LeftFlexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#MultiLeftFlexibleBracelet
+:MultiLeftFlexibleBracelet rdf:type owl:Class ;
+                           rdfs:subClassOf :LeftFlexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#MultiLeftInflexibleAnklet
+:MultiLeftInflexibleAnklet rdf:type owl:Class ;
+                           rdfs:subClassOf :LeftInflexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#MultiLeftInflexibleArmlet
+:MultiLeftInflexibleArmlet rdf:type owl:Class ;
+                           rdfs:subClassOf :LeftInflexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#MultiLeftInflexibleBracelet
+:MultiLeftInflexibleBracelet rdf:type owl:Class ;
+                             rdfs:subClassOf :LeftInflexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#MultiRightFlexibleAnklet
+:MultiRightFlexibleAnklet rdf:type owl:Class ;
+                          rdfs:subClassOf :RightFlexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#MultiRightFlexibleArmlet
+:MultiRightFlexibleArmlet rdf:type owl:Class ;
+                          rdfs:subClassOf :RightFlexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#MultiRightFlexibleBracelet
+:MultiRightFlexibleBracelet rdf:type owl:Class ;
+                            rdfs:subClassOf :RightFlexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#MultiRightInflexibleAnklet
+:MultiRightInflexibleAnklet rdf:type owl:Class ;
+                            rdfs:subClassOf :RightInflexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#MultiRightInflexibleArmlet
+:MultiRightInflexibleArmlet rdf:type owl:Class ;
+                            rdfs:subClassOf :RightInflexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#MultiRightInflexibleBracelet
+:MultiRightInflexibleBracelet rdf:type owl:Class ;
+                              rdfs:subClassOf :RightInflexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#MultiStrandHeadband
+:MultiStrandHeadband rdf:type owl:Class ;
+                     rdfs:subClassOf :StrandHeadband .
+
+
+###  http://www.semanticweb.org/XBO#MultiStrandNecklace
+:MultiStrandNecklace rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :StrandNecklace
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :hasQuantity ;
+                                                                  owl:someValuesFrom :Multi
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :StrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#MultiStrandWaistband
+:MultiStrandWaistband rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :StrandWaistband
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasQuantity ;
+                                                                   owl:someValuesFrom :Multi
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :StrandWaistband ;
+                      rdfs:label "MultiStrandWaistband"@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "MultiStrandWaistband"@en .
+
+
+###  http://www.semanticweb.org/XBO#MultiStreamHeadband
+:MultiStreamHeadband rdf:type owl:Class ;
+                     rdfs:subClassOf :StreamHeadband .
+
+
+###  http://www.semanticweb.org/XBO#MultiTabHeadband
+:MultiTabHeadband rdf:type owl:Class ;
+                  rdfs:subClassOf :TabHeadband .
+
+
+###  http://www.semanticweb.org/XBO#MultiTabNecklace
+:MultiTabNecklace rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :TabNecklace
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasSize ;
+                                                               owl:someValuesFrom :Multi
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] .
+
+
+###  http://www.semanticweb.org/XBO#MultiTasselNecklace
+:MultiTasselNecklace rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :TasselNecklace
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :hasQuantity ;
+                                                                  owl:someValuesFrom :Multi
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :TasselNecklace .
+
+
+###  http://www.semanticweb.org/XBO#Natural
+:Natural rdf:type owl:Class ;
+         rdfs:subClassOf :Material ;
+         owl:disjointWith :Synthetic ;
+         rdfs:label "Natural"@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Natural"@en .
+
+
+###  http://www.semanticweb.org/XBO#Neck
+:Neck rdf:type owl:Class ;
+      rdfs:subClassOf :BodyRegion ;
+      rdfs:label "Neck"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Neck"@en .
+
+
+###  http://www.semanticweb.org/XBO#Necklace
+:Necklace rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Item
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :isWornOn ;
+                                                       owl:someValuesFrom :Neck
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :Item ;
+          rdfs:comment "The class Necklace is used represent a beadwork  Item in form of  a band or string  that is worn around the Neck." ;
+          rdfs:label "Necklace"@en ;
+          <http://www.w3.org/2004/02/skos/core#broader> "Item"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Necklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#Noble
+:Noble rdf:type owl:Class ;
+       rdfs:subClassOf :Rank ;
+       rdfs:label "Noble"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Noble"@en .
+
+
+###  http://www.semanticweb.org/XBO#Person
+:Person rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :Man
+                                            :Woman
+                                          )
+                            ] ;
+        rdfs:subClassOf :PersonEntity ;
+        rdfs:comment "The class Person contains concepts that denote a human being, regarded as an individual in the physical commonsense intuition and according to the law as the subject of rights and duties as recognized by a culture or country." ;
+        rdfs:label "Person"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "Umntu"@xh ;
+        <http://www.w3.org/2004/02/skos/core#broader> "PersonEntity"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Person"@en .
+
+
+###  http://www.semanticweb.org/XBO#PersonEntity
+:PersonEntity rdf:type owl:Class ;
+              rdfs:subClassOf :DomainEntity ;
+              rdfs:comment "Class PersonEntity comprise concepts that represent a Person and the associated description of a Person as recognized by the law or the accepted precepts of a culture." ;
+              rdfs:label "PersonEntity"@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Person Entity"@en .
+
+
+###  http://www.semanticweb.org/XBO#Pondo
+:Pondo rdf:type owl:Class ;
+       rdfs:subClassOf :Tribe ;
+       rdfs:label "Pondo"@en ;
+       <http://www.w3.org/2004/02/skos/core#altLabel> "amaPondo"@en .
+
+
+###  http://www.semanticweb.org/XBO#Position
+:Position rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :Lower
+                                              :Middle
+                                              :Upper
+                                            )
+                              ] ;
+          rdfs:subClassOf :ValuePartition ;
+          rdfs:comment "Position is a  ValuePartition that describes only values from  subclasses Upper, Middle or Lower. NB These subclasses can themselves be further partitioned." ;
+          rdfs:label "Position"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Position"@en .
+
+
+###  http://www.semanticweb.org/XBO#Primary
+:Primary rdf:type owl:Class ;
+         rdfs:subClassOf :Colour ;
+         rdfs:label "Primary"@en ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Primary"@en .
+
+
+###  http://www.semanticweb.org/XBO#Quantity
+:Quantity rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( :Double
+                                              :Multi
+                                              :Single
+                                            )
+                              ] ;
+          rdfs:subClassOf :ValuePartition ;
+          rdfs:comment "Quantity is a  ValuePartition that describes only values from  subclasses Single, Double or Multi. NB These subclasses can themselves be further partitioned." ;
+          rdfs:label "Quantity"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantity"@en .
+
+
+###  http://www.semanticweb.org/XBO#Rank
+:Rank rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( :Common
+                                          :Noble
+                                          :Royal
+                                        )
+                          ] ;
+      rdfs:subClassOf :ValuePartition ;
+      rdfs:comment "Rank is a  ValuePartition that describes only values from  subclasses Royal, Noble or Common. NB These subclasses can themselves be further partitioned." ;
+      rdfs:label "Rank"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Rank"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightFlexibleAnklet
+:RightFlexibleAnklet rdf:type owl:Class ;
+                     rdfs:subClassOf :FlexibleAnklet ;
+                     rdfs:label "RightFlexibleAnklet"@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "RightFlexibleAnklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightFlexibleArmlet
+:RightFlexibleArmlet rdf:type owl:Class ;
+                     rdfs:subClassOf :FlexibleArmlet ;
+                     rdfs:label "RightFlexibleArmlet"@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "RightFlexibleArmlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightFlexibleBracelet
+:RightFlexibleBracelet rdf:type owl:Class ;
+                       rdfs:subClassOf :FlexibleBracelet ;
+                       rdfs:label "RightFlexibleBracelet"@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RightFlexibleBracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightInflexibleAnklet
+:RightInflexibleAnklet rdf:type owl:Class ;
+                       rdfs:subClassOf :InflexibleAnklet ;
+                       rdfs:label "RightInflexibleAnklet"@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RightInflexibleAnklet"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightInflexibleArmlet
+:RightInflexibleArmlet rdf:type owl:Class ;
+                       rdfs:subClassOf :InflexibleArmlet ;
+                       rdfs:label "RightInflexibleArmlet"@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RightInflexibleArmlet"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightInflexibleBracelet
+:RightInflexibleBracelet rdf:type owl:Class ;
+                         rdfs:subClassOf :InflexibleBracelet ;
+                         rdfs:label "RightInflexibleBracelet"@en ;
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "RightInflexibleBracelet"@en .
+
+
+###  http://www.semanticweb.org/XBO#RightSide
+:RightSide rdf:type owl:Class ;
+           rdfs:subClassOf :Side ;
+           rdfs:label "RightSide"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Right"@en .
+
+
+###  http://www.semanticweb.org/XBO#Ritual
+:Ritual rdf:type owl:Class ;
+        rdfs:subClassOf :Use ;
+        rdfs:label "Ritual"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Ritual"@en .
+
+
+###  http://www.semanticweb.org/XBO#Royal
+:Royal rdf:type owl:Class ;
+       rdfs:subClassOf :Rank ;
+       rdfs:label "Royal"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Royal"@en .
+
+
+###  http://www.semanticweb.org/XBO#Secondary
+:Secondary rdf:type owl:Class ;
+           rdfs:subClassOf :Colour ;
+           rdfs:label "Secondary"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Secondary"@en .
+
+
+###  http://www.semanticweb.org/XBO#Sex
+:Sex rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:unionOf ( :Female
+                                         :Male
+                                       )
+                         ] ;
+     rdfs:subClassOf :ValuePartition ;
+     rdfs:comment "Sex is a  ValuePartition that describes only values from  subclasses Male or Female. NB These subclasses can themselves be further partitioned." ;
+     rdfs:label "Sex"@en ;
+     <http://www.w3.org/2004/02/skos/core#altLabel> "Gender"@en ,
+                                                    "Isini"@xh ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Sex"@en .
+
+
+###  http://www.semanticweb.org/XBO#Shin
+:Shin rdf:type owl:Class ;
+      rdfs:subClassOf :BodyRegion ;
+      rdfs:label "Shin"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Shin"@en .
+
+
+###  http://www.semanticweb.org/XBO#Side
+:Side rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( :LeftSide
+                                          :RightSide
+                                        )
+                          ] ;
+      rdfs:subClassOf :ValuePartition ;
+      rdfs:comment "Side is a  ValuePartition that describes only values from  subclasses LeftSide or RightSide. NB These subclasses can themselves be further partitioned." ;
+      rdfs:label "Side"@en ;
+      <http://www.w3.org/2004/02/skos/core#altLabel> "Icala"@xh ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Side"@en .
+
+
+###  http://www.semanticweb.org/XBO#Single
+:Single rdf:type owl:Class ;
+        rdfs:subClassOf :Quantity ;
+        rdfs:label "Single"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Single"@en .
+
+
+###  http://www.semanticweb.org/XBO#SingleFringeHeadband
+:SingleFringeHeadband rdf:type owl:Class ;
+                      rdfs:subClassOf :FringeHeadband .
+
+
+###  http://www.semanticweb.org/XBO#SingleLeftFlexibleAnklet
+:SingleLeftFlexibleAnklet rdf:type owl:Class ;
+                          rdfs:subClassOf :LeftFlexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#SingleLeftFlexibleArmlet
+:SingleLeftFlexibleArmlet rdf:type owl:Class ;
+                          rdfs:subClassOf :LeftFlexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#SingleLeftFlexibleBracelet
+:SingleLeftFlexibleBracelet rdf:type owl:Class ;
+                            rdfs:subClassOf :LeftFlexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#SingleLeftInflexibleAnklet
+:SingleLeftInflexibleAnklet rdf:type owl:Class ;
+                            rdfs:subClassOf :LeftInflexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#SingleLeftInflexibleArmlet
+:SingleLeftInflexibleArmlet rdf:type owl:Class ;
+                            rdfs:subClassOf :LeftInflexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#SingleLeftInflexibleBracelet
+:SingleLeftInflexibleBracelet rdf:type owl:Class ;
+                              rdfs:subClassOf :LeftInflexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#SingleRightFlexibleAnklet
+:SingleRightFlexibleAnklet rdf:type owl:Class ;
+                           rdfs:subClassOf :RightFlexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#SingleRightFlexibleArmlet
+:SingleRightFlexibleArmlet rdf:type owl:Class ;
+                           rdfs:subClassOf :RightFlexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#SingleRightFlexibleBracelet
+:SingleRightFlexibleBracelet rdf:type owl:Class ;
+                             rdfs:subClassOf :RightFlexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#SingleRightInflexibleAnklet
+:SingleRightInflexibleAnklet rdf:type owl:Class ;
+                             rdfs:subClassOf :RightInflexibleAnklet .
+
+
+###  http://www.semanticweb.org/XBO#SingleRightInflexibleArmlet
+:SingleRightInflexibleArmlet rdf:type owl:Class ;
+                             rdfs:subClassOf :RightInflexibleArmlet .
+
+
+###  http://www.semanticweb.org/XBO#SingleRightInflexibleBracelet
+:SingleRightInflexibleBracelet rdf:type owl:Class ;
+                               rdfs:subClassOf :RightInflexibleBracelet .
+
+
+###  http://www.semanticweb.org/XBO#SingleStrandHeadband
+:SingleStrandHeadband rdf:type owl:Class ;
+                      rdfs:subClassOf :StrandHeadband .
+
+
+###  http://www.semanticweb.org/XBO#SingleStrandNecklace
+:SingleStrandNecklace rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :StrandNecklace
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasQuantity ;
+                                                                   owl:someValuesFrom :Single
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :StrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#SingleStrandWaistband
+:SingleStrandWaistband rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :StrandWaistband
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasQuantity ;
+                                                                    owl:someValuesFrom :Single
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :StrandWaistband ;
+                       rdfs:label "SingleStrandWaistband"@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "SingleStrandWaistband"@en .
+
+
+###  http://www.semanticweb.org/XBO#SingleStreamHeadband
+:SingleStreamHeadband rdf:type owl:Class ;
+                      rdfs:subClassOf :StreamHeadband .
+
+
+###  http://www.semanticweb.org/XBO#SingleTabHeadband
+:SingleTabHeadband rdf:type owl:Class ;
+                   rdfs:subClassOf :TabHeadband .
+
+
+###  http://www.semanticweb.org/XBO#SingleTabNecklace
+:SingleTabNecklace rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :TabNecklace
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasQuantity ;
+                                                                owl:someValuesFrom :Single
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] .
+
+
+###  http://www.semanticweb.org/XBO#SingleTasselNecklace
+:SingleTasselNecklace rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :TasselNecklace
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasQuantity ;
+                                                                   owl:someValuesFrom :Single
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :TasselNecklace .
+
+
+###  http://www.semanticweb.org/XBO#Size
+:Size rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( :Large
+                                          :Medium
+                                          :Small
+                                        )
+                          ] ;
+      rdfs:subClassOf :ValuePartition ;
+      rdfs:comment "Size  is a  ValuePartition that describes only values from  subclasses Small, Medium or Large. NB These subclasses can themselves be further partitioned." ;
+      rdfs:label "Size"@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Size"@en .
+
+
+###  http://www.semanticweb.org/XBO#Small
+:Small rdf:type owl:Class ;
+       rdfs:subClassOf :Size ;
+       rdfs:label "Small"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Small"@en .
+
+
+###  http://www.semanticweb.org/XBO#SmallDoubleStrandNecklace
+:SmallDoubleStrandNecklace rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :DoubleStrandNecklace
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasSize ;
+                                                                        owl:someValuesFrom :Small
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  http://www.semanticweb.org/XBO#SmallDoubleTabNecklace
+:SmallDoubleTabNecklace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :DoubleTabNecklace
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasSize ;
+                                                                     owl:someValuesFrom :Small
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://www.semanticweb.org/XBO#SmallFlexibleCollarNecklace
+:SmallFlexibleCollarNecklace rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( :FlexibleCollarNecklace
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :hasSize ;
+                                                                          owl:someValuesFrom :Small
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf :FlexibleCollarNecklace .
+
+
+###  http://www.semanticweb.org/XBO#SmallInflexibleCollarNecklace
+:SmallInflexibleCollarNecklace rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( :InflexibleCollarNecklace
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :hasSize ;
+                                                                            owl:someValuesFrom :Small
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf :InflexibleCollarNecklace .
+
+
+###  http://www.semanticweb.org/XBO#SmallMultiStrandNecklace
+:SmallMultiStrandNecklace rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :MultiStrandNecklace
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :hasSize ;
+                                                                       owl:someValuesFrom :Small
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :MultiStrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#SmallMultiTabNecklace
+:SmallMultiTabNecklace rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :MultiTabNecklace
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasSize ;
+                                                                    owl:someValuesFrom :Small
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] .
+
+
+###  http://www.semanticweb.org/XBO#SmallSingleStrandNecklace
+:SmallSingleStrandNecklace rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SingleStrandNecklace
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :hasSize ;
+                                                                        owl:someValuesFrom :Small
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :SingleStrandNecklace .
+
+
+###  http://www.semanticweb.org/XBO#SmallSingleTabNecklace
+:SmallSingleTabNecklace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :SingleTabNecklace
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :hasSize ;
+                                                                     owl:someValuesFrom :Small
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] .
+
+
+###  http://www.semanticweb.org/XBO#Strand
+:Strand rdf:type owl:Class ;
+        rdfs:subClassOf :Decoration ;
+        owl:disjointWith :Streamer ,
+                         :Tab ,
+                         :Tassel ;
+        rdfs:label "Strand"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Strand"@en .
+
+
+###  http://www.semanticweb.org/XBO#StrandHeadband
+:StrandHeadband rdf:type owl:Class ;
+                rdfs:subClassOf :FlexibleHeadband .
+
+
+###  http://www.semanticweb.org/XBO#StrandNecklace
+:StrandNecklace rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasDecoration ;
+                                                             owl:someValuesFrom :Strand
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Necklace ;
+                rdfs:label "StrandNecklace"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "StrandNecklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#StrandWaistband
+:StrandWaistband rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Waistband
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasDecoration ;
+                                                              owl:someValuesFrom :Strand
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Waistband ;
+                 rdfs:label "StrandWaistband"@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "StrandWaistband"@en .
+
+
+###  http://www.semanticweb.org/XBO#StreamHeadband
+:StreamHeadband rdf:type owl:Class ;
+                rdfs:subClassOf :FlexibleHeadband .
+
+
+###  http://www.semanticweb.org/XBO#Streamer
+:Streamer rdf:type owl:Class ;
+          rdfs:subClassOf :Decoration ;
+          owl:disjointWith :Tab ,
+                           :Tassel .
+
+
+###  http://www.semanticweb.org/XBO#Synthetic
+:Synthetic rdf:type owl:Class ;
+           rdfs:subClassOf :Material ;
+           rdfs:label "Synthetic"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Synthetic"@en .
+
+
+###  http://www.semanticweb.org/XBO#Tab
+:Tab rdf:type owl:Class ;
+     rdfs:subClassOf :Decoration ;
+     owl:disjointWith :Tassel .
+
+
+###  http://www.semanticweb.org/XBO#TabHeadband
+:TabHeadband rdf:type owl:Class ;
+             rdfs:subClassOf :FlexibleHeadband .
+
+
+###  http://www.semanticweb.org/XBO#TabNecklace
+:TabNecklace rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasDecoration ;
+                                                          owl:someValuesFrom :Tab
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Necklace ;
+             rdfs:label "TabNecklace"@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "TabNecklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#Tassel
+:Tassel rdf:type owl:Class ;
+        rdfs:subClassOf :Decoration .
+
+
+###  http://www.semanticweb.org/XBO#TasselNecklace
+:TasselNecklace rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasDecoration ;
+                                                             owl:someValuesFrom :Tassel
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Necklace ;
+                rdfs:label "TasselNecklace"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "TasselNecklace"@en .
+
+
+###  http://www.semanticweb.org/XBO#Tertiary
+:Tertiary rdf:type owl:Class ;
+          rdfs:subClassOf :Colour ;
+          rdfs:label "Tertiary"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Tertiary"@en .
+
+
+###  http://www.semanticweb.org/XBO#Thembu
+:Thembu rdf:type owl:Class ;
+        rdfs:subClassOf :Tribe ;
+        rdfs:label "Thembu"@en ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "abaThembu"@en .
+
+
+###  http://www.semanticweb.org/XBO#Toddlerhood
+:Toddlerhood rdf:type owl:Class ;
+             rdfs:subClassOf :Infanthood ;
+             rdfs:label "Toddlerhood"@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Toddlerhood"@en .
+
+
+###  http://www.semanticweb.org/XBO#Tribe
+:Tribe rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:unionOf ( :Bhaca
+                                           :Bomvana
+                                           :Fengu
+                                           :Pondo
+                                           :Thembu
+                                           :Xhosa
+                                         )
+                           ] ;
+       rdfs:subClassOf :ValuePartition ;
+       rdfs:comment "Tribe is a  ValuePartition that describes only values from  subclasses Xhosa, Pondo, Fengu, Bhaca, Bomvana or Thembu. NB These subclasses can themselves be further partitioned." ;
+       rdfs:label "Tribe"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Tribe"@en .
+
+
+###  http://www.semanticweb.org/XBO#Upper
+:Upper rdf:type owl:Class ;
+       rdfs:subClassOf :Position ;
+       rdfs:label "Upper"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Upper"@en .
+
+
+###  http://www.semanticweb.org/XBO#Use
+:Use rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:unionOf ( :Ceremony
+                                         :Ritual
+                                       )
+                         ] ;
+     rdfs:subClassOf :ValuePartition ;
+     rdfs:comment "Use is a  ValuePartition that describes only values from  subclasses Ritual or Ceremony. NB These subclasses can themselves be further partitioned." ;
+     rdfs:label "Use"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Use"@en .
+
+
+###  http://www.semanticweb.org/XBO#ValuePartition
+:ValuePartition rdf:type owl:Class ;
+                rdfs:subClassOf :DomainEntity ;
+                rdfs:comment "ValuePartition is a pattern that describes a restricted set of classes from which a property can be associated. The parent class is used in restrictions, and the covering axiom means that only members of the subclasses may be used as values.  ValuePartition  has subclasses  Material, Colour, Rank, BodyType, Sex, Tribe, Size, Age, Use, Position, BodyRegion, Decoration, Side and Quantity." ;
+                rdfs:label "ValuePartition"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Value Partition"@en .
+
+
+###  http://www.semanticweb.org/XBO#Waist
+:Waist rdf:type owl:Class ;
+       rdfs:subClassOf :BodyRegion ;
+       rdfs:label "Waist"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Waist"@en .
+
+
+###  http://www.semanticweb.org/XBO#Waistband
+:Waistband rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Item
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :isWornOn ;
+                                                        owl:someValuesFrom :Waist
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Item ;
+           rdfs:comment "The class Waistband represents a beadwork Item inform of  a strip or band encircling or  fitting around the Waist." ;
+           rdfs:label "Waistband"@en ;
+           <http://www.w3.org/2004/02/skos/core#broader> "Item"@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Waistband"@en .
+
+
+###  http://www.semanticweb.org/XBO#WhistleNecklace
+:WhistleNecklace rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Necklace
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasDecoration ;
+                                                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :Tab
+                                                                                                :Tassel
+                                                                                              )
+                                                                                ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] .
+
+
+###  http://www.semanticweb.org/XBO#Woman
+:Woman rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :Person
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasSex ;
+                                                    owl:someValuesFrom :Female
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :Person ;
+       rdfs:label "Woman"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Woman"@en .
+
+
+###  http://www.semanticweb.org/XBO#Wrist
+:Wrist rdf:type owl:Class ;
+       rdfs:subClassOf :BodyRegion ;
+       rdfs:label "Wrist"@en ;
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Wrist"@en .
+
+
+###  http://www.semanticweb.org/XBO#Xhosa
+:Xhosa rdf:type owl:Class ;
+       rdfs:subClassOf :Tribe ;
+       rdfs:label "Xhosa"@en ;
+       <http://www.w3.org/2004/02/skos/core#altLabel> "amaXhosa"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/XBO#Fringe
+:Fringe rdf:type owl:NamedIndividual ,
+                 :Fringe .
+
+
+###  http://www.semanticweb.org/XBO#Ipenlote_1
+:Ipenlote_1 rdf:type owl:NamedIndividual ,
+                     :Necklace ;
+            :hasDecoration :Tab ;
+            :localName "Ipenlote" .
+
+
+###  http://www.semanticweb.org/XBO#Ipenlote_2
+:Ipenlote_2 rdf:type owl:NamedIndividual ,
+                     :Necklace ;
+            :hasDecoration :Tassel ;
+            :localName "Ipenlote" .
+
+
+###  http://www.semanticweb.org/XBO#Streamer
+:Streamer rdf:type owl:NamedIndividual ,
+                   :Streamer .
+
+
+###  http://www.semanticweb.org/XBO#Tab
+:Tab rdf:type owl:NamedIndividual ,
+              :Tab .
+
+
+###  http://www.semanticweb.org/XBO#Tassel
+:Tassel rdf:type owl:NamedIndividual ,
+                 :Tassel .
+
+
+###  http://www.semanticweb.org/XBO#id
+:id rdf:type owl:NamedIndividual ;
+    :commonName "Whistle Necklace" ;
+    :itemDecoration "Tab" ,
+                    "Tassel" .
+
+
+###  http://www.semanticweb.org/XBO#ssnecklace_1
+:ssnecklace_1 rdf:type owl:NamedIndividual ,
+                       :SingleStrandNecklace ;
+              :commonName "Necklace" ;
+              :itemSize "Large" ,
+                        "Small" ;
+              :localName "Amaso" .
+
+
+###  http://www.semanticweb.org/XBO#sswaistband_1
+:sswaistband_1 rdf:type owl:NamedIndividual ,
+                        :SingleStrandWaistband ;
+               :commonName "Waistband" ;
+               :localName "Amaso" ;
+               :placementRegion "Waist" .
+
+
+###  http://www.semanticweb.org/XBO#tabnecklace
+:tabnecklace rdf:type owl:NamedIndividual ,
+                      :TabNecklace ;
+             :ageGroup "40.0"^^xsd:double ;
+             :bodyType "Flexible" ;
+             rdfs:label "tab necklace" ;
+             <http://www.w3.org/2004/02/skos/core#altLabel> "amaphoco"@xh .
+
+
+###  http://www.semanticweb.org/XBO#x
+:x rdf:type owl:NamedIndividual ;
+   :hasDecoration :Tab ,
+                  :Tassel .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Fringe rdfs:label "Fringe"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Fringe"@en .
+
+
+:Streamer rdfs:label "Streamer"@en ;
+          <http://www.w3.org/2004/02/skos/core#prefLabel> "Streamer"@en .
+
+
+:Tab rdfs:label "Tab"@en ;
+     <http://www.w3.org/2004/02/skos/core#prefLabel> "Tab"@en .
+
+
+:Tassel rdfs:label "Tassel"@en ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Tassel"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Ankle
+                :Arm
+                :Head
+                :Neck
+                :Shin
+                :Waist
+                :Wrist
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Anklet
+                :Armlet
+                :Bracelet
+                :Headband
+                :Necklace
+                :Waistband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bhaca
+                :Bomvana
+                :Fengu
+                :Pondo
+                :Thembu
+                :Xhosa
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CharmNecklace
+                :ChokerNecklace
+                :CollarNecklace
+                :StrandNecklace
+                :TabNecklace
+                :TasselNecklace
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Common
+                :Noble
+                :Royal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Double
+                :Multi
+                :Single
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleFringeHeadband
+                :MultiFringeHeadband
+                :SingleFringeHeadband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleLeftFlexibleAnklet
+                :MultiLeftFlexibleAnklet
+                :SingleLeftFlexibleAnklet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleLeftFlexibleArmlet
+                :MultiLeftFlexibleArmlet
+                :SingleLeftFlexibleArmlet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleLeftFlexibleBracelet
+                :MultiLeftFlexibleBracelet
+                :SingleLeftFlexibleBracelet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleLeftInflexibleAnklet
+                :MultiLeftInflexibleAnklet
+                :SingleLeftInflexibleAnklet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleLeftInflexibleArmlet
+                :MultiLeftInflexibleArmlet
+                :SingleLeftInflexibleArmlet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleLeftInflexibleBracelet
+                :MultiLeftInflexibleBracelet
+                :SingleLeftInflexibleBracelet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleRightFlexibleAnklet
+                :MultiRightFlexibleAnklet
+                :SingleRightFlexibleAnklet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleRightFlexibleArmlet
+                :MultiRightFlexibleArmlet
+                :SingleRightFlexibleArmlet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleRightFlexibleBracelet
+                :MultiRightFlexibleBracelet
+                :SingleRightFlexibleBracelet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleRightInflexibleAnklet
+                :MultiRightInflexibleAnklet
+                :SingleRightInflexibleAnklet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleRightInflexibleArmlet
+                :MultiRightInflexibleArmlet
+                :SingleRightInflexibleArmlet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleRightInflexibleBracelet
+                :MultiRightInflexibleBracelet
+                :SingleRightInflexibleBracelet
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleStrandHeadband
+                :MultiStrandHeadband
+                :SingleStrandHeadband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleStrandNecklace
+                :MultiStrandNecklace
+                :SingleStrandNecklace
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleStrandWaistband
+                :MultiStrandWaistband
+                :SingleStrandWaistband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleStreamHeadband
+                :MultiStreamHeadband
+                :SingleStreamHeadband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleTabHeadband
+                :MultiTabHeadband
+                :SingleTabHeadband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleTabNecklace
+                :MultiTabNecklace
+                :SingleTabNecklace
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DoubleTasselNecklace
+                :MultiTasselNecklace
+                :SingleTasselNecklace
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EarlyAdolescence
+                :LateAdolescence
+                :MiddleAdolescence
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EarlyAdulthood
+                :LateAdulthood
+                :MiddleAdulthood
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EarlyChildhood
+                :LateChildhood
+                :MiddleChildhood
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FringeHeadband
+                :StrandHeadband
+                :StreamHeadband
+                :TabHeadband
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Large
+                :Medium
+                :Small
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Lower
+                :Middle
+                :Upper
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Primary
+                :Secondary
+                :Tertiary
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
