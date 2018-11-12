@@ -45,6 +45,9 @@
     "LeftInflexibleArmlet" : {
       "@id" : "http://www.semanticweb.org/XBO#LeftInflexibleArmlet"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "Side" : {
       "@id" : "http://www.semanticweb.org/XBO#Side"
     },
@@ -662,9 +665,6 @@
     },
     "SingleRightFlexibleArmlet" : {
       "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleArmlet"
-    },
-    "WhistleNecklace" : {
-      "@id" : "http://www.semanticweb.org/XBO#WhistleNecklace"
     },
     "SingleTabNecklace" : {
       "@id" : "http://www.semanticweb.org/XBO#SingleTabNecklace"
