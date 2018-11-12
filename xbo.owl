@@ -3,18 +3,20 @@
      xml:base="http://www.semanticweb.org/XBO"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xbo="http://www.semanticweb.org/XBO#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xhosa="http://www.semanticweb.org/XBO#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/XBO">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/XBO/1.0.0"/>
-        <terms:creator xml:lang="en">Loyd Tinarwo</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xhosa Beadwork Ontology (XBO) is a knowledge representation with a persective on  preservation, promotion, development and management of IK on Xhosa Beadwork.</terms:description>
-        <terms:title xml:lang="en">Xhosa Beadwork Ontology(XBO)</terms:title>
-        <rdfs:label xml:lang="en">Xhosa Beadwork Ontology (XBO)</rdfs:label>
+        <terms:creator>Loyd Tinarwo</terms:creator>
+        <terms:description xml:lang="en">Xhosa Beadwork Ontology (XBO) is a knowledge representation with a perspective on preservation, promotion, development and management of IK on Xhosa Beadwork. Hence, this ontology creates a common conceptual framework for beadwork using common beadwork knowledge described within Xhosa Beadwork. XBO is anchored on personal ornamentation function of Xhosa Beadwork. The ontology combines many aspects of the associated description of Xhosa Beadwork in order to give a rich classification. This description of Xhosa Beadwork is captured with value partitions and restrictions on beadwork classes. Then a series of defined classes establishes the classification. XBO describes the characteristics of an array of Xhosa Beadwork viz; Headband, Necklace, Armlet, Bracelet, Waistband and Anklet.</terms:description>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons Attribution 3.0 (CC BY-SA 3.0 ZA)</terms:license>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XBO</terms:title>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xhosa Beadwork Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3203,31 +3205,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/XBO#WhistleNecklace -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/XBO#WhistleNecklace">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/XBO#Necklace"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/XBO#hasDecoration"/>
-                        <owl:allValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/XBO#Tab"/>
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/XBO#Tassel"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/XBO#Woman -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/XBO#Woman">
@@ -3328,60 +3305,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#Tassel">
         <rdf:type rdf:resource="http://www.semanticweb.org/XBO#Tassel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#id -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#id">
-        <commonName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whistle Necklace</commonName>
-        <itemDecoration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tab</itemDecoration>
-        <itemDecoration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tassel</itemDecoration>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#ssnecklace_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#ssnecklace_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/XBO#SingleStrandNecklace"/>
-        <commonName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Necklace</commonName>
-        <itemSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large</itemSize>
-        <itemSize rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small</itemSize>
-        <localName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amaso</localName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#sswaistband_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#sswaistband_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/XBO#SingleStrandWaistband"/>
-        <commonName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waistband</commonName>
-        <localName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amaso</localName>
-        <placementRegion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waist</placementRegion>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#tabnecklace -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#tabnecklace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/XBO#TabNecklace"/>
-        <ageGroup rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</ageGroup>
-        <bodyType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flexible</bodyType>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tab necklace</rdfs:label>
-        <skos:altLabel xml:lang="xh">amaphoco</skos:altLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#x -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#x">
-        <hasDecoration rdf:resource="http://www.semanticweb.org/XBO#Tab"/>
-        <hasDecoration rdf:resource="http://www.semanticweb.org/XBO#Tassel"/>
     </owl:NamedIndividual>
     
 
