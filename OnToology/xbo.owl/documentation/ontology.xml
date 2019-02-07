@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/XBO#"
      xml:base="http://www.semanticweb.org/XBO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:XBO="http://www.semanticweb.org/XBO#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,10 +12,11 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/XBO">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/XBO/1.0.0"/>
-        <terms:creator xml:lang="en">Loyd Tinarwo</terms:creator>
-        <terms:description>Xhosa Beadwork Ontology (XBO) is a knowledge representation with a persective on  preservation, promotion, development and management of IK on Xhosa Beadwork.</terms:description>
-        <terms:title xml:lang="en">Xhosa Beadwork Ontology(XBO)</terms:title>
-        <rdfs:label xml:lang="en">Xhosa Beadwork Ontology (XBO)</rdfs:label>
+        <terms:creator>Loyd Tinarwo (University of Fort Hare)</terms:creator>
+        <terms:description xml:lang="en">Xhosa Beadwork Ontology (XBO) is a knowledge representation with a perspective on preservation, promotion, development and management of IK on Xhosa Beadwork. Hence, this ontology creates a common conceptual framework for beadwork using common beadwork knowledge described within Xhosa Beadwork. XBO is anchored on personal ornamentation function of Xhosa Beadwork. The ontology combines many aspects of the associated description of Xhosa Beadwork in order to give a rich classification. This description of Xhosa Beadwork is captured with value partitions and restrictions on beadwork classes. Then a series of defined classes establishes the classification. XBO describes the characteristics of an array of Xhosa Beadwork viz; Headband, Necklace, Armlet, Bracelet, Waistband and Anklet.</terms:description>
+        <terms:license>Creative Commons Attribution 3.0 (CC BY-SA 3.0 ZA)</terms:license>
+        <rdfs:label>Xhosa Beadwork Ontology</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -28,6 +30,51 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <dc:description xml:lang="en-us">Typically, Date will be associated with the creation or
+         availability of the resource.  Recommended best practice
+         for encoding the date value is defined in a profile of
+         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dc:description>
+        <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#date-004"/>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2002-10-04</terms:modified>
+        <rdfs:comment xml:lang="en-us">A date associated with an event in the life cycle of the
+         resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en-us">Date</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content.</dc:description>
+        <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#description-004"/>
+        <terms:issued>1999-07-02</terms:issued>
+        <terms:modified>2002-10-04</terms:modified>
+        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en-us">Description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
@@ -45,10 +92,31 @@
     
 
 
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -3445,32 +3513,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/XBO#WhistleNecklace -->
-
-
-    <owl:Class rdf:about="http://www.semanticweb.org/XBO#WhistleNecklace">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/XBO#Necklace"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/XBO#hasDecoration"/>
-                        <owl:allValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/XBO#Tab"/>
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/XBO#Tassel"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/XBO#Woman -->
 
 
@@ -3581,65 +3623,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#Tassel">
         <rdf:type rdf:resource="http://www.semanticweb.org/XBO#Tassel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#id -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#id">
-        <commonName>Whistle Necklace</commonName>
-        <itemDecoration>Tab</itemDecoration>
-        <itemDecoration>Tassel</itemDecoration>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#ssnecklace_1 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#ssnecklace_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/XBO#SingleStrandNecklace"/>
-        <commonName>Necklace</commonName>
-        <itemSize>Large</itemSize>
-        <itemSize>Small</itemSize>
-        <localName>Amaso</localName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#sswaistband_1 -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#sswaistband_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/XBO#SingleStrandWaistband"/>
-        <commonName>Waistband</commonName>
-        <localName>Amaso</localName>
-        <placementRegion>Waist</placementRegion>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#tabnecklace -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#tabnecklace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/XBO#TabNecklace"/>
-        <ageGroup rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</ageGroup>
-        <bodyType>Flexible</bodyType>
-        <rdfs:label>tab necklace</rdfs:label>
-        <skos:altLabel xml:lang="xh">amaphoco</skos:altLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/XBO#x -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/XBO#x">
-        <hasDecoration rdf:resource="http://www.semanticweb.org/XBO#Tab"/>
-        <hasDecoration rdf:resource="http://www.semanticweb.org/XBO#Tassel"/>
     </owl:NamedIndividual>
     
 

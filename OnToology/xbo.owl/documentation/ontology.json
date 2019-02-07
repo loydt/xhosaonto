@@ -1258,42 +1258,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#Necklace"
+      "@id" : "http://www.semanticweb.org/XBO#Person"
     }, {
       "@id" : "_:genid351"
     } ]
   } ]
 }, {
   "@id" : "_:genid351",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid352"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/XBO#hasDecoration"
-  } ]
-}, {
-  "@id" : "_:genid352",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#Tab"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#Tassel"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid356",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#Person"
-    }, {
-      "@id" : "_:genid358"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid358",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.semanticweb.org/XBO#hasSex"
@@ -1302,7 +1273,7 @@
     "@id" : "http://www.semanticweb.org/XBO#Female"
   } ]
 }, {
-  "@id" : "_:genid360",
+  "@id" : "_:genid353",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1322,7 +1293,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid368",
+  "@id" : "_:genid361",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1340,7 +1311,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid375",
+  "@id" : "_:genid368",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1358,7 +1329,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid382",
+  "@id" : "_:genid375",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1376,7 +1347,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid389",
+  "@id" : "_:genid382",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1388,7 +1359,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid393",
+  "@id" : "_:genid386",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1400,7 +1371,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid397",
+  "@id" : "_:genid390",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1409,6 +1380,30 @@
       "@id" : "http://www.semanticweb.org/XBO#MultiFringeHeadband"
     }, {
       "@id" : "http://www.semanticweb.org/XBO#SingleFringeHeadband"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid394",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleAnklet"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleAnklet"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleAnklet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid398",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleArmlet"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleArmlet"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleArmlet"
     } ]
   } ]
 }, {
@@ -1435,31 +1430,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid401",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleAnklet"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleAnklet"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleAnklet"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid405",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#DoubleLeftFlexibleArmlet"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#MultiLeftFlexibleArmlet"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#SingleLeftFlexibleArmlet"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid409",
+  "@id" : "_:genid402",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1471,7 +1442,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid413",
+  "@id" : "_:genid406",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1483,7 +1454,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid417",
+  "@id" : "_:genid410",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1495,7 +1466,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid421",
+  "@id" : "_:genid414",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1507,7 +1478,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid425",
+  "@id" : "_:genid418",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1519,7 +1490,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid429",
+  "@id" : "_:genid422",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1528,6 +1499,18 @@
       "@id" : "http://www.semanticweb.org/XBO#MultiRightFlexibleArmlet"
     }, {
       "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleArmlet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid426",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleRightFlexibleBracelet"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#MultiRightFlexibleBracelet"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleBracelet"
     } ]
   } ]
 }, {
@@ -1541,19 +1524,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid433",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#DoubleRightFlexibleBracelet"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#MultiRightFlexibleBracelet"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleBracelet"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid437",
+  "@id" : "_:genid430",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1565,7 +1536,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid441",
+  "@id" : "_:genid434",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1577,7 +1548,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid445",
+  "@id" : "_:genid438",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1589,7 +1560,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid449",
+  "@id" : "_:genid442",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1598,6 +1569,18 @@
       "@id" : "http://www.semanticweb.org/XBO#MultiStrandHeadband"
     }, {
       "@id" : "http://www.semanticweb.org/XBO#SingleStrandHeadband"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid446",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleStrandNecklace"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#MultiStrandNecklace"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#SingleStrandNecklace"
     } ]
   } ]
 }, {
@@ -1610,19 +1593,7 @@
     "@id" : "http://www.semanticweb.org/XBO#Wrist"
   } ]
 }, {
-  "@id" : "_:genid453",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#DoubleStrandNecklace"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#MultiStrandNecklace"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#SingleStrandNecklace"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid457",
+  "@id" : "_:genid450",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1634,7 +1605,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid461",
+  "@id" : "_:genid454",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1646,7 +1617,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid465",
+  "@id" : "_:genid458",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1658,7 +1629,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid469",
+  "@id" : "_:genid462",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1667,6 +1638,18 @@
       "@id" : "http://www.semanticweb.org/XBO#MultiTabNecklace"
     }, {
       "@id" : "http://www.semanticweb.org/XBO#SingleTabNecklace"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid466",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/XBO#DoubleTasselNecklace"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#MultiTasselNecklace"
+    }, {
+      "@id" : "http://www.semanticweb.org/XBO#SingleTasselNecklace"
     } ]
   } ]
 }, {
@@ -1680,19 +1663,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid473",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/XBO#DoubleTasselNecklace"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#MultiTasselNecklace"
-    }, {
-      "@id" : "http://www.semanticweb.org/XBO#SingleTasselNecklace"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid477",
+  "@id" : "_:genid470",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1704,7 +1675,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid481",
+  "@id" : "_:genid474",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1716,7 +1687,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid485",
+  "@id" : "_:genid478",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1728,7 +1699,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid489",
+  "@id" : "_:genid482",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1742,16 +1713,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/XBO#hasDecoration"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/XBO#Charm"
-  } ]
-}, {
-  "@id" : "_:genid494",
+  "@id" : "_:genid487",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1763,7 +1725,16 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid498",
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/XBO#hasDecoration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/XBO#Charm"
+  } ]
+}, {
+  "@id" : "_:genid491",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -1775,7 +1746,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid502",
+  "@id" : "_:genid495",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -2016,13 +1987,85 @@
     } ]
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en-us",
+    "@value" : "Typically, Date will be associated with the creation or\n         availability of the resource.  Recommended best practice\n         for encoding the date value is defined in a profile of\n         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format."
+  } ],
+  "http://purl.org/dc/elements/1.1/type" : [ {
+    "@id" : "http://dublincore.org/usage/documents/principles/#element"
+  } ],
+  "http://purl.org/dc/terms/hasVersion" : [ {
+    "@id" : "http://dublincore.org/usage/terms/history/#date-004"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "1999-07-02"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2002-10-04"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "A date associated with an event in the life cycle of the\n         resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Date"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en-us",
+    "@value" : "Description may include but is not limited to: an abstract,\n         table of contents, reference to a graphical representation\n         of content or a free-text account of the content."
+  } ],
+  "http://purl.org/dc/elements/1.1/type" : [ {
+    "@id" : "http://dublincore.org/usage/documents/principles/#element"
+  } ],
+  "http://purl.org/dc/terms/hasVersion" : [ {
+    "@id" : "http://dublincore.org/usage/terms/history/#description-004"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "1999-07-02"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2002-10-04"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "An account of the content of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Description"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/hasVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -2031,22 +2074,23 @@
   "@id" : "http://www.semanticweb.org/XBO",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "en",
-    "@value" : "Loyd Tinarwo"
+    "@value" : "Loyd Tinarwo (University of Fort Hare)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Xhosa Beadwork Ontology (XBO) is a knowledge representation with a persective on  preservation, promotion, development and management of IK on Xhosa Beadwork."
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "Xhosa Beadwork Ontology(XBO)"
+    "@value" : "Xhosa Beadwork Ontology (XBO) is a knowledge representation with a perspective on preservation, promotion, development and management of IK on Xhosa Beadwork. Hence, this ontology creates a common conceptual framework for beadwork using common beadwork knowledge described within Xhosa Beadwork. XBO is anchored on personal ornamentation function of Xhosa Beadwork. The ontology combines many aspects of the associated description of Xhosa Beadwork in order to give a rich classification. This description of Xhosa Beadwork is captured with value partitions and restrictions on beadwork classes. Then a series of defined classes establishes the classification. XBO describes the characteristics of an array of Xhosa Beadwork viz; Headband, Necklace, Armlet, Bracelet, Waistband and Anklet."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Creative Commons Attribution 3.0 (CC BY-SA 3.0 ZA)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Xhosa Beadwork Ontology (XBO)"
+    "@value" : "Xhosa Beadwork Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/XBO/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/XBO#Adolescence",
@@ -4514,12 +4558,6 @@
     "@value" : "Waistband"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/XBO#WhistleNecklace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid349"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/XBO#Woman",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -4530,7 +4568,7 @@
     "@id" : "http://www.semanticweb.org/XBO#Person"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid356"
+    "@id" : "_:genid349"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4850,17 +4888,6 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/XBO#id",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/XBO#commonName" : [ {
-    "@value" : "Whistle Necklace"
-  } ],
-  "http://www.semanticweb.org/XBO#itemDecoration" : [ {
-    "@value" : "Tab"
-  }, {
-    "@value" : "Tassel"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/XBO#isWornBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5081,57 +5108,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@value" : "social rank"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/XBO#ssnecklace_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/XBO#SingleStrandNecklace" ],
-  "http://www.semanticweb.org/XBO#commonName" : [ {
-    "@value" : "Necklace"
-  } ],
-  "http://www.semanticweb.org/XBO#itemSize" : [ {
-    "@value" : "Large"
-  }, {
-    "@value" : "Small"
-  } ],
-  "http://www.semanticweb.org/XBO#localName" : [ {
-    "@value" : "Amaso"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/XBO#sswaistband_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/XBO#SingleStrandWaistband" ],
-  "http://www.semanticweb.org/XBO#commonName" : [ {
-    "@value" : "Waistband"
-  } ],
-  "http://www.semanticweb.org/XBO#localName" : [ {
-    "@value" : "Amaso"
-  } ],
-  "http://www.semanticweb.org/XBO#placementRegion" : [ {
-    "@value" : "Waist"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/XBO#tabnecklace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/XBO#TabNecklace" ],
-  "http://www.semanticweb.org/XBO#ageGroup" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "40.0"
-  } ],
-  "http://www.semanticweb.org/XBO#bodyType" : [ {
-    "@value" : "Flexible"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "tab necklace"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "xh",
-    "@value" : "amaphoco"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/XBO#x",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/XBO#hasDecoration" : [ {
-    "@id" : "http://www.semanticweb.org/XBO#Tab"
-  }, {
-    "@id" : "http://www.semanticweb.org/XBO#Tassel"
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",

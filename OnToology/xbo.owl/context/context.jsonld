@@ -45,6 +45,9 @@
     "LeftInflexibleArmlet" : {
       "@id" : "http://www.semanticweb.org/XBO#LeftInflexibleArmlet"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "Side" : {
       "@id" : "http://www.semanticweb.org/XBO#Side"
     },
@@ -118,6 +121,9 @@
     "Armlet" : {
       "@id" : "http://www.semanticweb.org/XBO#Armlet"
     },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
     "SingleRightInflexibleAnklet" : {
       "@id" : "http://www.semanticweb.org/XBO#SingleRightInflexibleAnklet"
     },
@@ -176,6 +182,9 @@
     "hasFather" : {
       "@id" : "http://www.semanticweb.org/XBO#hasFather",
       "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "DoubleRightFlexibleAnklet" : {
       "@id" : "http://www.semanticweb.org/XBO#DoubleRightFlexibleAnklet"
@@ -494,6 +503,9 @@
     "Waist" : {
       "@id" : "http://www.semanticweb.org/XBO#Waist"
     },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
     "MultiRightInflexibleBracelet" : {
       "@id" : "http://www.semanticweb.org/XBO#MultiRightInflexibleBracelet"
     },
@@ -562,6 +574,9 @@
     "Upper" : {
       "@id" : "http://www.semanticweb.org/XBO#Upper"
     },
+    "type" : {
+      "@id" : "http://purl.org/dc/elements/1.1/type"
+    },
     "Waistband" : {
       "@id" : "http://www.semanticweb.org/XBO#Waistband"
     },
@@ -577,6 +592,9 @@
     },
     "SingleRightInflexibleBracelet" : {
       "@id" : "http://www.semanticweb.org/XBO#SingleRightInflexibleBracelet"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
     },
     "Synthetic" : {
       "@id" : "http://www.semanticweb.org/XBO#Synthetic"
@@ -602,6 +620,9 @@
     },
     "Neck" : {
       "@id" : "http://www.semanticweb.org/XBO#Neck"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
     },
     "LargeInflexibleCollarNecklace" : {
       "@id" : "http://www.semanticweb.org/XBO#LargeInflexibleCollarNecklace"
@@ -662,9 +683,6 @@
     },
     "SingleRightFlexibleArmlet" : {
       "@id" : "http://www.semanticweb.org/XBO#SingleRightFlexibleArmlet"
-    },
-    "WhistleNecklace" : {
-      "@id" : "http://www.semanticweb.org/XBO#WhistleNecklace"
     },
     "SingleTabNecklace" : {
       "@id" : "http://www.semanticweb.org/XBO#SingleTabNecklace"
